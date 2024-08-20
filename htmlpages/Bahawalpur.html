@@ -1,0 +1,1011 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahawalpur | My Pakistan My Heaven</title>
+                <!-- STYLING -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/styling.css">
+      <!-- BOOTSTRAP, POPPER AND JQUERY -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/styling.js"></script>
+        <!-- Animation -->
+    <link rel="stylesheet" href="../css/animation.css">
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../icons/bootstrap-icons.css">
+</head>
+<body>
+   <!-- Navbar -->
+   <div class="container-fluid p-0 fixed-top">
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg px-3 py-2 navbar-light" id="navbar">
+        <!-- LOGO -->
+        <a class="navbar-brand p-0" href="../index.html">
+            <!--               My Pakistan My Heaven-->
+            <img class="p-0" src="../images/logo.png" height="75">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- HOME -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-auto">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../htmlpages/about.html">About</a>
+                </li>
+                <!-- DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Sindh.html">Sindh</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Punjab.html">Punjab</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Balochistan.html">Balochistan</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Kpk.html">Kpk</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Gilgit.html">Gilgit</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tourist Guide
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Karachi.html">Karachi</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Lahore.html">Lahore</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Isd.html">Islamabad</a></li>
+                    </ul>
+                </li>
+                <!-- OTHER ITEMS -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../htmlpages/Feedback.html">Feedback</a>
+                </li>
+                <li class="header-btn mt-1">
+                    <a class="nav-link btn btn-dark p-1 px-4" href="../htmlpages/map.html">Map</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+           <!-- COVER PIC -->
+  <div>
+    <img src="../images/Punjab/Bahawalpur3.jpg" class="img-fluid cover" style="width: 100%;">
+</div>
+
+<!-- DESTINATIONS -->
+<div class="container-fluid mt-5">
+  <h1 class="text-center text-dark"><b>Destinations</b></h1>
+        <!-- 1ST ROW -->
+
+      <!-- Des 1 -->
+  <div class="row ">
+  <div class="col-md-3 des">
+    <div class="card" onclick="mahal()" id="minar" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Punjab/Bahawalpur4.jpg" alt="Card image"></div>
+        <div class="card-body">
+          <div class="row">
+          <div class="col-md-2">
+            <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal1"></i>
+          </div>
+          <div class="col-md-10 ">
+        <h5 class="card-title text-center">Noor Mahal</h5>
+      </div>
+      </div>
+      </div> 
+  </div>
+        <!-- Des 2 -->
+  <div class="col-md-3 des">
+    <div class="card" onclick="darbar()" id="mosque" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Punjab/dm.jpg" alt="Card image"></div> 
+        <div class="card-body">
+          <div class="row">
+          <div class="col-md-2">
+            <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal2"></i>
+          </div>
+          <div class="col-md-10 ">
+        <h5 class="card-title text-center">Darbar Mahal</h5>
+      </div>
+      </div>
+      </div> 
+  </div>
+        <!-- Des 3 -->
+  <div class="col-md-3 des">
+  <div class="card" onclick="gulzar()" id="have" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Punjab/gm.jpg" alt="Card image"></div>
+    <div class="card-body">
+      <div class="row">
+      <div class="col-md-2">
+        <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal3"></i>
+      </div>
+      <div class="col-md-10 ">
+    <h5 class="card-title text-center">Gulzar Mahal</h5>
+  </div>
+  </div>
+  </div> 
+  </div>
+  
+        <!-- Des 4 -->
+  <div class="col-md-3 des">
+    <div class="card" onclick="jamia()" id="garden" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Punjab/jm.jpg" alt="Card image"></div>
+        <div class="card-body">
+          <div class="row">
+          <div class="col-md-2">
+            <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal4"></i>
+          </div>
+          <div class="col-md-10 ">
+        <h5 class="card-title text-center">Jamia Mosque, Al-Sadiq</h5>
+      </div>
+      </div>
+      </div> 
+  </div>
+  
+  </div>
+  
+  <div class="d-grid col-md-2 mx-auto">
+  <button class="btn btn-dark text-white text-center" id="view">View More</button>
+  </div>
+  
+  <!-- 2nd row DESTINATIONS -->
+  <div id="viewmore">
+  <div class="row mt-2 justify-content-center">
+      <!-- Des 5 -->
+  <div class="col-md-3 des ">
+    <div class="card" onclick="ss()" id="town" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Punjab/ssworld.jpg" alt="Card image"></div>
+        <div class="card-body">
+          <div class="row">
+          <div class="col-md-2">
+            <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal5"></i>
+          </div>
+          <div class="col-md-10 ">
+        <h5 class="card-title text-center">SS World park</h5>
+      </div>
+      </div>
+      </div> 
+  </div>
+
+      <!-- Des 6 -->
+  <div class="col-md-3 des ">
+    <div class="card" onclick="library()" id="town" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Punjab/library.jpg" alt="Card image"></div>
+        <div class="card-body">
+          <div class="row">
+          <div class="col-md-2">
+            <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal6"></i>
+          </div>
+          <div class="col-md-10 ">
+        <h5 class="card-title text-center">Central Library</h5>
+      </div>
+      </div>
+      </div> 
+  </div>
+  
+  
+  </div>
+</div>
+</div>
+
+
+<!-- HOTELS -->
+<div class="container-fluid mt-5">
+  <h1 class="text-center text-dark"><b>Hotels</b></h1>
+            <!-- 1st row HOTELS-->
+  <div class="row ">
+  
+  
+        <!-- 1st hotel -->
+  <div class="col-md-3 des">
+    <div class="card" onclick="regency()" id="" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Punjab/tgr.jpg" alt="Card image">
+      <div class="card-body">
+      <h5 class="card-title text-center">The Grand Regency</h5>
+    </div>
+    </div> 
+    </div>
+  
+  
+  <!-- 2nd hotel -->
+  <div class="col-md-3 des">
+      <div class="card" onclick="royal()" id="" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Punjab/rm.jpg" alt="Card image">
+        <div class="card-body">
+        <h5 class="card-title text-center">Royal Mark</h5>
+      </div>
+      </div> 
+      </div>
+  
+  <!-- 3rd hotel -->
+  <div class="col-md-3 des">
+  <div class="card" onclick="hotel1()" id="" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Punjab/hotel1b.jpg" alt="Card image">
+    <div class="card-body">
+    <h5 class="card-title text-center">Hotel One</h5>
+  </div>
+  </div> 
+  </div>
+  
+  <!-- 4th hotel -->
+  <div class="col-md-3 des ">
+    <div class="card" onclick="lodges()" id="" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Punjab/hel1.jpg" alt="Card image">
+      <div class="card-body">
+      <h5 class="card-title text-center">Hotel Executive Lodges</h5>
+    </div>
+    </div> 
+    </div>
+  
+  
+  </div>
+
+  
+  <div class="d-grid col-md-2 mx-auto">
+  <button class="btn btn-dark text-white text-center" id="view1">View More</button>
+  </div>
+
+  <!-- 2nd row HOTELS -->
+
+<div id="viewmore1">
+  <div class="row mt-2 justify-content-center">
+  
+  <!-- 5th hotel -->
+  <div class="col-md-3 des">
+      <div class="card" onclick="lataska()" id="" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Punjab/lataska.jpg" alt="Card image">
+        <div class="card-body">
+        <h5 class="card-title text-center">La Taska</h5>
+      </div>
+      </div> 
+      </div> 
+
+          <!-- 6th hotel -->
+  <div class="col-md-3 des">
+      <div class="card" onclick="galaxy()" id="" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Punjab/gh.jpg" alt="Card image">
+        <div class="card-body">
+        <h5 class="card-title text-center">Galaxy Heights Inn</h5>
+      </div>
+      </div> 
+      </div> 
+      </div>
+</div>
+</div>
+</div>
+
+
+    <!-- Footer -->
+    <div class="footer-clean mt-5">
+      <footer>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                <div class="row ">
+              <h3 class="col-12 p-0 text-center">Cities Of Pakistan</h3>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Karachi.html">Karachi</a></li>
+                  <li><a href="../htmlpages/Hyd.html">Hyderabad</a></li>
+                  <li><a href="../htmlpages/Sukkur.html">Sukkur</a></li>
+                  <li><a href="../htmlpages/Lahore.html">Lahore</a></li>
+                  <li><a href="../htmlpages/Isd.html">Islamabad</a></li>
+                  <li><a href="../htmlpages/Faisalabad.html">Faisalabad</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Bahawalpur.html">Bahawalpur</a></li>
+                  <li><a href="../htmlpages/Multan.html">Multan</a></li>
+                  <li><a href="../htmlpages/Quetta.html">Quetta</a></li>
+                  <li><a href="../htmlpages/Gawadar.html">Gawadar</a></li>
+                  <li><a href="../htmlpages/Peshawer.html">Peshawer</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Abbottabad.html">Abbottabad</a></li>
+                  <li><a href="../htmlpages/Swat.html">Swat</a></li>
+                  <li><a href="../htmlpages/Gilgitc.html">Gilgit</a></li>
+                  <li><a href="../htmlpages/Hunza.html">Hunza</a></li>
+                  <li><a href="../htmlpages/Skardu.html">Skardu</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="row">
+                  <div class="col-md-5 item">        
+                  <h3>Quick Links</h3>
+                  <ul class="mt-3">
+                      <li><a href="../htmlpages/about.html">About Us</a></li>
+                      <li><a href="../htmlpages/map.html">Map of Pakistan</a></li>
+                  </ul>
+              </div>
+  
+              <div class="col-md-7 pt-5">
+                <h4 class="text-center">"It is better to see something ones than to hear about it thousand times."</h4>
+                <h5 class="text-center">~Anonymous</h5>
+              </div>
+              </div>
+              </div>
+      </div>
+            <div class="row mt-3">
+              <div class="col item social">
+                  <p class="copyright">My Pakistan My Heaven © 2021</p>
+              </div>
+          </div>
+          </div>
+      </footer>
+  </div>
+
+  <!-- Footer Ends -->
+
+ <!--Location Modal 1-->
+ <div class="modal fade" id="mymodal1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16537.252098377146!2d71.65943786640173!3d29.38407715171123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbdaa5fc9c881df6!2sNoor%20Mahal!5e0!3m2!1sen!2s!4v1631035056444!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Location Modal 2 -->
+<div class="modal fade" id="mymodal2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.080893461857!2d71.69768321442658!3d29.397189555813057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b90ec536cfba3%3A0x7d9e2e09bea950e!2sDarbar%20Mahal%2C%20Bahawalpur%20Palaces%2C%20Bahawalpur%2C%20Punjab%2063100%2C%20Pakistan!5e0!3m2!1sen!2s!4v1631035079977!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 3-->
+<div class="modal fade" id="mymodal3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.1959315812574!2d71.69555131442644!3d29.39382385596905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b90eeae4e2f1d%3A0xb9fb4295bd188e04!2sGulzar%20Mahal%2C%20Bahawalpur%20Palaces%2C%20Bahawalpur%2C%20Punjab%2063100%2C%20Pakistan!5e0!3m2!1sen!2s!4v1631035132218!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 4-->
+<div class="modal fade" id="mymodal4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.132854702742!2d71.67209911442652!3d29.39566935588348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b90c9eea24f7b%3A0xf5c004925394038e!2sJamia%20Masjid%20Al-Sadiq!5e0!3m2!1sen!2s!4v1631035157494!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!--Location Modal 5-->
+ <div class="modal fade" id="mymodal5" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6952.300647054023!2d71.6590004757215!3d29.39515826452848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b9735722a0ceb%3A0xee78bb7fe8e1f259!2sSS%20World%20Family%20Park!5e0!3m2!1sen!2s!4v1631035018825!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Location Modal 6 -->
+<div class="modal fade" id="mymodal6" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.294540294466!2d71.68280171442633!3d29.39093855610266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b90c47541b1ad%3A0x1389786d73171529!2sGovt.%20Central%20Library%20Bahawalpur!5e0!3m2!1sen!2s!4v1631034950210!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DESTINATIONS MODAL BOX -->
+            
+            <!--MODAL 1-->
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Noor Mahal</h4>
+                  <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body bg-dark">
+              <div class="row">
+                <div class="col-sm-6 mt-1">
+              <img src="../images/Punjab/noormahal1.jpg"class="img-fluid mg1">
+            </div>
+              <div class="col-sm-6 mt-1">
+              <img src="../images/Punjab/noormahal2.jpg" class="img-fluid mg1">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 mt-2 d-grid mx-auto">
+              <img src="../images/Punjab/noormahal3.jpg" class="img-fluid mg1"></div>
+            </div>
+              <p class="text-white mt-3 text-justify" style="font-size: medium;">Noor Mahal is a great palace which was built by the fifth ruler of Bahawalpur State, Nawab Sir Muhammad Sadiq or also known as Shahjehan of Bahawalpur, who was famous for his passion of constructing beautiful buildings.</p>
+            </div>
+            <div class="modal-footer bg-dark">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                Close 
+               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+              <!-- MODAL 2-->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Darbar Mahal</h4>
+                  <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body bg-dark">
+              <div class="row">
+                <div class="col-sm-6 mt-1">
+              <img src="../images/Punjab/dm1.jpg"class="img-fluid mg1">
+            </div>
+              <div class="col-sm-6 mt-1">
+              <img src="../images/Punjab/dm2.jpg" class="img-fluid mg1">
+              </div>
+            </div>
+            <div class="row">
+            <div class="col-sm-6 mt-2 d-grid mx-auto ">
+              <img src="../images/Punjab/dm4.jpg" class="img-fluid mg1">
+            </div>
+              <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                Darbar Mahal is a palace in the city of Bahawalpur, Pakistan. The building was built to hold courtly events and government offices of the former princely state of Bahawalpur. The palace was built by Bahawal Khan V, and initially named Mubarak Mahal.</p>
+            </div>
+            <div class="modal-footer bg-dark">
+                <!-- CLOSE -->
+
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                Close 
+               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+            <!--  MODAL 3-->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Gulzar Mahal</h4>
+                  <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body bg-dark">
+              <div class="row">
+                <div class="col-sm-6 mt-1">
+              <img src="../images/Punjab/gm1.jpg"class="img-fluid mg1">
+            </div>
+              <div class="col-sm-6 mt-1">
+              <img src="../images/Punjab/gm2.jpg" class="img-fluid mg1">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 mt-2 ">
+              <img src="../images/Punjab/gm3.jpg" class="img-fluid mg1">
+              </div>
+              <div class="col-sm-6 mt-2 ">
+                <img src="../images/Punjab/gm4.jpg" class="img-fluid mg1">
+                </div>
+            </div>
+              <p class="text-white mt-3 text-justify" style="font-size: medium;">Gulzar Mahal is a palace in the city of Bahawalpur, Pakistan, that was built between 1906 and 1909. It was commissioned during the reign of Sadeq Mohammad Khan V, and was built to be the residence for women members of the royal household of the former princely state of Bahawalpur, aside from the Queen.</p>
+            </div>
+            <div class="modal-footer bg-dark">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                Close 
+               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL  4-->
+      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Jamia Mosque, Al-Sadiq</h4>
+                  <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body bg-dark">
+              <div class="row">
+              <div class="col-sm-6 mt-1">
+              <img src="../images/Punjab/jm1.jpg" class="img-fluid mg1"></div>
+              <div class="col-sm-6 mt-1">
+              <img src="../images/Punjab/jm2.jpg" class="img-fluid mg1"></div>
+            </div>
+            <div class="row">
+            <div class="col-sm-6 mt-2 d-grid mx-auto">
+              <img src="../images/Punjab/jm3.jpg" class="img-fluid mg1">
+            </div>
+            </div>
+              <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                Al-Sadiq Mosque is a mosque located in Bahawalpur, Punjab, Pakistan. Its foundation stone was laid by Great Sufi of Chishtia clan and the Spiritual Master of Nawab of Bahawalpur Noor Muhammad Maharvi more than 200 years ago. </p>
+            </div>
+            <div class="modal-footer bg-dark">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+            <!-- MODAL 5-->
+      <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">SS World Park</h4>
+                  <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body bg-dark">
+              <div class="row">
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Punjab/ssworld1.jpg" class="img-fluid mg1"></div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Punjab/ssworld2.jpg" class="img-fluid mg1"></div>
+              </div>
+              <div class="row">
+              <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Punjab/ssworld3.jpg" class="img-fluid mg1">
+              </div>
+              </div>
+              <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                SS World Amusement Park has been opened in the city of Bahawalpur, it is a state of the art amusement park which provides entertainment and enjoyment for the whole family. SS World Amusement Park offers indoor and outdoor games, water stream, waterfall and also has one of the best food courts in the city of Bahawalpur.</p>
+            </div>
+            <div class="modal-footer bg-dark">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- MODAL  6-->
+       <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Central Library</h4>
+                  <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body bg-dark">
+              <div class="row">
+              <div class="col-sm-6 mt-1">
+              <img src="../images/Punjab/library1.jpg" class="img-fluid mg1"></div>
+              <div class="col-sm-6 mt-1">
+              <img src="../images/Punjab/library2.jpg" class="img-fluid mg1"></div>
+            </div>
+            <div class="row">
+            <div class="col-sm-6 mt-2 d-grid mx-auto">
+              <img src="../images/Punjab/library4.jpg" class="img-fluid mg1">
+            </div>
+    
+            </div>
+              <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                The second largest library of Punjab, the Bahawalpur Central Library is famous for its treasury of books. It contains a whole array of subjects and thousands of documents including rare manuscripts of historical importance</p>
+            </div>
+            <div class="modal-footer bg-dark">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+<!-- HOTELS MODAL BOX -->
+
+      <!-- Titanic Resort HOTEL -->
+      <div class="modal fade" id="modal01" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">The Grand Regency Hotel</h4>
+                  <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-md-12 mt-2">
+                  <img src="../images/Punjab/tgr1.jpg" class="img-fluid mg3">
+                </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-sm-6 mt-2">
+                <img src="../images/Punjab/tgrr.jpg"class="img-fluid mg1">
+                <h6 class="text-white text-center">Rooms</h6>
+              </div>
+                <div class="col-sm-6 mt-2">
+                <img src="../images/Punjab/tgrd.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Dining</h6>
+                </div>
+              </div>
+                <div class="row">
+                <div class="col-sm-6 mt-1 d-grid mx-auto">
+                  <img src="../images/Punjab/tgrl.jfif" class="img-fluid mg1">
+                <h6 class="text-white text-center">Lobby</h6>
+      
+                </div>
+              </div>
+      
+            </div>
+    
+          <div class="modal-footer bg-dark">
+    
+                <!-- CLOSE -->
+             
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                Close  
+               </button>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    
+      <!-- Royal Mark HOTEL -->
+    
+      <div class="modal fade" id="modal02" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Royal Mark</h4>
+                  <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body bg-dark">
+              <div class="row">
+                <div class="col-md-12 mt-2">
+                <img src="../images/Punjab/rm.jpg" class="img-fluid mg3">
+              </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-6 mt-2">
+              <img src="../images/Punjab/rmr.jfif"class="img-fluid mg1">
+              <h6 class="text-white text-center">Rooms</h6>
+            </div>
+              <div class="col-sm-6 mt-2">
+              <img src="../images/Punjab/rmd.jpg" class="img-fluid mg1">
+              <h6 class="text-white text-center">Dining</h6>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-sm-6 mt-1 d-grid mx-auto">
+                <img src="../images/Punjab/rml.jpg" class="img-fluid mg1">
+              <h6 class="text-white text-center">Lobby</h6>
+            </div>
+
+
+          </div>
+    
+          </div>
+    
+          <div class="modal-footer bg-dark">
+            <!-- CLOSE -->
+             
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                Close  
+               </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+    <!-- Hotel one HOTEL -->
+      <div class="modal fade" id="modal03" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Hotel One</h4>
+                  <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body bg-dark">
+              <div class="row">
+                <div class="col-md-12 mt-2">
+                <img src="../images/Punjab/hotel1b1.jfif" class="img-fluid mg3">
+              </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-6 mt-2">
+              <img src="../images/Punjab/hotel1br.jpg"class="img-fluid mg1">
+              <h6 class="text-white text-center">Rooms</h6>
+            </div>
+                <div class="col-sm-6 mt-2">
+                <img src="../images/Punjab/hotel1bl.jpg" class="img-fluid mg1">
+              <h6 class="text-white text-center">Lobby</h6>
+            </div>
+          </div>
+          </div>
+    
+          <div class="modal-footer bg-dark">
+    
+                <!-- CLOSE -->
+             
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                Close  
+               </button>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    
+      <!-- Executive Lodges HOTEL -->
+    
+      <div class="modal fade" id="modal04" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Hotel Executive lodges</h4>
+                  <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body bg-dark">
+              <div class="row">
+                <div class="col-md-12 mt-2">
+                <img src="../images/Punjab/hel1.jpg" class="img-fluid mg3">
+              </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-6 mt-2">
+              <img src="../images/Punjab/helr.jpg"class="img-fluid mg1">
+              <h6 class="text-white text-center">Rooms</h6>
+            </div>
+              <div class="col-sm-6 mt-2">
+              <img src="../images/Punjab/hell.jpg" class="img-fluid mg1">
+              <h6 class="text-white text-center">Lobby</h6>
+              </div>
+            </div>
+
+    
+          </div>
+    
+          <div class="modal-footer bg-dark">
+            <!-- CLOSE -->
+             
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                Close  
+               </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+    
+            <!--La Taska HOTEL -->
+      <div class="modal fade" id="modal05" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">La Taska</h4>
+                  <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body bg-dark">
+              <div class="row">
+                <div class="col-md-12 mt-2">
+                <img src="../images/Punjab/lataska1.jpg" class="img-fluid mg3">
+              </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-6 mt-2">
+              <img src="../images/Punjab/lataskar.jpg"class="img-fluid mg1">
+              <h6 class="text-white text-center">Rooms</h6>
+            </div>
+                <div class="col-sm-6 mt-2">
+                <img src="../images/Punjab/lataskad.jpg" class="img-fluid mg1">
+              <h6 class="text-white text-center">Dining</h6>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-6 mt-1 d-grid mx-auto">
+                <img src="../images/Punjab/lataskal.jpg" class="img-fluid mg1">
+              <h6 class="text-white text-center">Lobby</h6>
+            </div>
+            </div>
+          </div>
+    
+          <div class="modal-footer bg-dark">
+    
+                <!-- CLOSE -->
+             
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                Close  
+               </button>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    
+        <!-- Galaxy heights HOTEL -->
+    
+      <div class="modal fade" id="modal06" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Galaxy Heights Inn</h4>
+                  <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body bg-dark">
+              <div class="row">
+                <div class="col-md-12 mt-2 ">
+                <img src="../images/Punjab/gh1.jpeg" class="img-fluid mg3">
+              </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-6 mt-2">
+              <img src="../images/Punjab/gh.jpg"class="img-fluid mg1">
+              <h6 class="text-white text-center">Rooms</h6>
+            </div>
+                <div class="col-sm-6 mt-2">
+                <img src="../images/Punjab/ghd.jpg" class="img-fluid mg1">
+              <h6 class="text-white text-center">Dining</h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mt-1 d-grid mx-auto">
+            <img src="../images/Punjab/ghl.jpg" class="img-fluid mg1">
+          <h6 class="text-white text-center">Lobby</h6>
+        </div>
+
+        </div>
+          </div>
+    
+          <div class="modal-footer bg-dark">
+            <!-- CLOSE -->
+             
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                Close  
+               </button>
+          </div>
+        </div>
+      </div>
+      </div>
+</body>
+</html>
+
+
+  <script>
+
+function mahal() {
+          $('#modal1').modal('show');
+};   
+function darbar() {
+          $('#modal2').modal('show');
+};
+function gulzar() {
+          $('#modal3').modal('show');
+      };
+function jamia() {
+          $('#modal4').modal('show');
+      };     
+function ss() {
+          $('#modal5').modal('show');
+      };
+      function library() {
+          $('#modal6').modal('show');
+      };
+
+
+  // HOTELS
+
+  function regency() {
+          $('#modal01').modal('show');
+};   
+function royal() {
+          $('#modal02').modal('show');
+};
+function hotel1() {
+          $('#modal03').modal('show');
+      };
+function lodges() {
+          $('#modal04').modal('show');
+      };     
+function lataska() {
+          $('#modal05').modal('show');
+      };
+function galaxy() {
+          $('#modal06').modal('show');
+      };
+  //  VIEW MORE
+  $(document).ready(function(){
+$("#view").click(function(){
+$("#viewmore").fadeIn("slow")
+$("#view").hide();
+
+  });
+});
+// VIEW MORE HOTELS
+$(document).ready(function(){
+$("#view1").click(function(){
+$("#viewmore1").fadeIn("slow")
+$("#view1").hide();
+
+  });
+});
+
+</script>

@@ -1,0 +1,1691 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamabad | My Pakistan My Heaven</title>
+                <!-- STYLING -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/styling.css">
+      <!-- BOOTSTRAP, POPPER AND JQUERY -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/styling.js"></script>
+        <!-- Animation -->
+    <link rel="stylesheet" href="../css/animation.css">
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../icons/bootstrap-icons.css">
+</head>
+<body>
+         <!-- Navbar -->
+  <div class="container-fluid p-0 fixed-top">
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg px-3 py-2 navbar-light" id="navbar">
+        <!-- LOGO -->
+        <a class="navbar-brand p-0" href="../index.html">
+          <!--               My Pakistan My Heaven-->
+          <img class="p-0" src="../images/logo.png" height="75">
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- HOME -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-auto">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../htmlpages/about.html">About</a>
+                </li>
+                <!-- DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Sindh.html">Sindh</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Punjab.html">Punjab</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Balochistan.html">Balochistan</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Kpk.html">Kpk</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Gilgit.html">Gilgit</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tourist Guide
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Karachi.html">Karachi</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Lahore.html">Lahore</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Isd.html">Islamabad</a></li>
+                    </ul>
+                </li>
+                <!-- OTHER ITEMS -->
+                <li class="nav-item">
+                  <a class="nav-link" href="../htmlpages/Feedback.html">Feedback</a>
+              </li>
+                <li class="header-btn mt-1">
+                    <a class="nav-link btn btn-dark p-1 px-4" href="../htmlpages/map.html">Map</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+    <!-- NAVBAR END  -->
+
+      <!-- COVER PIC -->
+  <div>
+        <img src="../images/Punjab/isdc.jpg" class="img-fluid cover" style="width: 100%;">
+</div>
+  
+      <!-- DESTINATIONS -->
+<div class="container-fluid mt-5">
+<h1 class="text-center text-dark"><b>Destinations</b></h1>
+      <!-- 1ST ROW -->
+    <!-- Des 1 -->
+<div class="row ">
+<div class="col-md-3 des">
+  <div class="card" onclick="faisal()" id="quaid" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Punjab/isd5.jpg" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal1"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Faisal Mosque</h5>
+    </div>
+    </div>
+    </div> 
+</div>
+      <!-- Des 2 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="monal()" id="sea" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Punjab/Monal.jpg" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal2"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">The Monal</h5>
+    </div>
+    </div>
+    </div> 
+</div>
+      <!-- Des 3 -->
+<div class="col-md-3 des">
+<div class="card" onclick="monument()" id="d1" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Punjab/monument.jpg" alt="Card image"></div>
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-2">
+      <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal3"></i>
+    </div>
+    <div class="col-md-10 ">
+  <h5 class="card-title text-center">Monument Museum</h5>
+</div>
+</div>
+</div> 
+</div>
+
+      <!-- Des 4 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="fatima()" id="pg1" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Punjab/fj6.png" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal4"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Fatima Jinnah Park</h5>
+    </div>
+    </div>
+    </div> 
+</div>
+</div>
+
+<div class="d-grid col-md-2 mx-auto">
+<button class="btn btn-dark text-white text-center" id="view">View More</button>
+</div>
+
+<!-- 2nd row DESTINATIONS -->
+<div id="viewmore">
+<div class="row mt-2 ">
+    <!-- Des 5 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="khanpur()" id="m1" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Punjab/khanpur3.jpg" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal5"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Khanpur Dam</h5>
+    </div>
+    </div>
+    </div> 
+</div>
+
+<!-- Des 6 -->
+<div class="col-md-3 des">
+<div class="card" onclick="lakeview()" id="b1" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Punjab/lakeview3.jpg" alt="Card image"></div>
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-2">
+      <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal6"></i>
+    </div>
+    <div class="col-md-10 ">
+  <h5 class="card-title text-center">Lake View Park</h5>
+</div>
+</div>
+</div> 
+</div>
+
+<!-- Des 7 -->
+<div class="col-md-3 des">
+<div class="card" onclick="trail()" id="l1" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Punjab/trail5.jpg" alt="Card image"></div>
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-2">
+      <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal7"></i>
+    </div>
+    <div class="col-md-10 ">
+  <h5 class="card-title text-center">Trail 5</h5>
+</div>
+</div>
+</div> 
+</div>
+
+<!-- Des 8 -->
+<div class="col-md-3 des">
+<div class="card" onclick="museum()" id="p1" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Punjab/lv.jpg" alt="Card image"></div>
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-2">
+      <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal8"></i>
+    </div>
+    <div class="col-md-10 ">
+  <h5 class="card-title text-center">Lok Virsa Heritage</h5>
+</div>
+</div>
+</div> 
+</div>
+
+</div>
+
+
+
+<!-- Row 3 Destinations -->
+<div class="row mt-2 ">
+  <!-- Des 9 -->
+<div class="col-md-3 des">
+<div class="card" onclick="ginyaki()" id="town" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Punjab/ginyakic.jpeg" alt="Card image"></div>
+    <div class="card-body">
+      <div class="row">
+      <div class="col-md-2">
+        <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal9"></i>
+      </div>
+      <div class="col-md-10 ">
+    <h5 class="card-title text-center">Ginyaki (Oriental Cafe)</h5>
+  </div>
+  </div>
+  </div> 
+</div>
+
+<!-- Des 10 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="damanekoh()" id="mahal" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Punjab/damanekoh2.jpg" alt="Card image"></div>
+    <div class="card-body">
+      <div class="row">
+      <div class="col-md-2">
+        <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal10"></i>
+      </div>
+      <div class="col-md-10 ">
+    <h5 class="card-title text-center">Daman-e-Koh</h5>
+  </div>
+  </div>
+  </div> 
+  </div>
+
+<!-- Des 11 -->
+<div class="col-md-3 des">
+<div class="card" onclick="village()" id="l1" style="border: none;">
+<img class="card-img-top img-fluid img1" src="../images/Punjab/saidpur2.jpg" alt="Card image"></div>
+<div class="card-body">
+  <div class="row">
+  <div class="col-md-2">
+    <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal11"></i>
+  </div>
+  <div class="col-md-10 ">
+<h5 class="card-title text-center">Saidpur Village</h5>
+</div>
+</div>
+</div> 
+
+</div>
+ <!-- Des 12-->
+ <div class="col-md-3 des">
+  <div class="card" onclick="murree()" id="town" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Punjab/murree1.jpg" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal12"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Murree</h5>
+    </div>
+    </div>
+    </div> 
+  </div>
+</div>
+</div>
+
+      <!-- TOURIST GUIDES -->
+<div class="container mt-5">
+<h1 class="text-center text-dark"><b>Tourist Guides</b></h1>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card " style="border: none;">
+      <a href="https://www.facebook.com/tourandeventplanners/"><img class="card-img-top image-fluid img1" src="../images/Punjab/taep.jfif" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title text-center">Tour And Event Planners</h4>
+      </div>
+      </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="border: none;">
+      <a href="https://www.facebook.com/haiderytravels/"><img class="card-img-top image-fluid img1" src="../images/Punjab/haiderytours.jfif" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title text-center">Haidery Tours</h4>
+      </div>
+      </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="border: none;">
+         <a href="https://www.facebook.com/Wildtravelers1/"><img class="card-img-top image-fluid img1" src="../images/Punjab/wt.jfif" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title text-center">Wild Travelers</h4>
+          </div>
+          </div>
+          </div>
+
+</div>
+</div>
+
+          <!-- HOTELS -->
+<div class="container-fluid mt-5">
+<h1 class="text-center text-dark"><b>Hotels</b></h1>
+          <!-- 1st row HOTELS-->
+<div class="row ">
+
+<!-- 1st hotel -->
+<div class="col-md-3 des">
+<div class="card" onclick="marriot()" id="" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Punjab/marriott1.jpg" alt="Card image">
+  <div class="card-body">
+  <h5 class="card-title text-center">Marriott</h5>
+</div>
+</div> 
+</div>
+
+<!-- 2nd hotel -->
+<div class="col-md-3 des">
+<div class="card" onclick="ramada()" id="" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Punjab/ramadaisd.jpg" alt="Card image">
+  <div class="card-body">
+  <h5 class="card-title text-center">Ramada</h5>
+</div>
+</div> 
+</div>
+
+<!-- 3rd hotel -->
+
+<div class="col-md-3 des">
+  <div class="card" onclick="serena()" id="" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Punjab/serenac.jpg" alt="Card image">
+    <div class="card-body">
+    <h5 class="card-title text-center">Serena</h5>
+  </div>
+  </div> 
+  </div>
+
+
+<!-- 4th hotel -->
+<div class="col-md-3 des">
+<div class="card" onclick="margalla()" id="" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Punjab/margalah.jpg" alt="Card image">
+  <div class="card-body">
+  <h5 class="card-title text-center">Hotel Margalla</h5>
+</div>
+</div> 
+</div>
+
+</div>
+
+<div class="d-grid col-md-2 mx-auto">
+<button class="btn btn-dark text-white text-center" id="view1">View More</button>
+</div>
+
+<!-- 2nd row HOTELS -->
+
+<div id="viewmore1">
+<div class="row mt-2 ">
+
+    <!-- 5th hotel -->
+<div class="col-md-3 des">
+<div class="card" onclick="pc()" id="" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Punjab/pcisdc.jpg" alt="Card image">
+  <div class="card-body">
+  <h5 class="card-title text-center">PC (Pearl Continental)</h5>
+</div>
+</div> 
+</div>
+
+<!-- 6th hotel -->
+<div class="col-md-3 des">
+<div class="card" onclick="hillview()" id="" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Punjab/hillview.jpg" alt="Card image">
+  <div class="card-body">
+  <h5 class="card-title text-center">Hill View</h5>
+</div> 
+</div> 
+</div>
+
+<!-- 7th hotel -->
+<div class="col-md-3 des">
+  <div class="card" onclick="envoy()" id="" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Punjab/envoy.jpg" alt="Card image">
+    <div class="card-body">
+    <h5 class="card-title text-center">Envoy Continental</h5>
+  </div>
+  </div> 
+  </div>
+
+<!-- 8th hotel -->
+<div class="col-md-3 des">
+<div class="card" onclick="isdhotel()" id="" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Punjab/isdhotel.jpeg" alt="Card image">
+  <div class="card-body">
+  <h5 class="card-title text-center">Islamabad Hotel</h5>
+</div>
+</div> 
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+    <!-- Footer -->
+    <div class="footer-clean mt-5">
+      <footer>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                <div class="row ">
+              <h3 class="col-12 p-0 text-center">Cities Of Pakistan</h3>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Karachi.html">Karachi</a></li>
+                  <li><a href="../htmlpages/Hyd.html">Hyderabad</a></li>
+                  <li><a href="../htmlpages/Sukkur.html">Sukkur</a></li>
+                  <li><a href="../htmlpages/Lahore.html">Lahore</a></li>
+                  <li><a href="../htmlpages/Isd.html">Islamabad</a></li>
+                  <li><a href="../htmlpages/Faisalabad.html">Faisalabad</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Bahawalpur.html">Bahawalpur</a></li>
+                  <li><a href="../htmlpages/Multan.html">Multan</a></li>
+                  <li><a href="../htmlpages/Quetta.html">Quetta</a></li>
+                  <li><a href="../htmlpages/Gawadar.html">Gawadar</a></li>
+                  <li><a href="../htmlpages/Peshawer.html">Peshawer</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Abbottabad.html">Abbottabad</a></li>
+                  <li><a href="../htmlpages/Swat.html">Swat</a></li>
+                  <li><a href="../htmlpages/Gilgitc.html">Gilgit</a></li>
+                  <li><a href="../htmlpages/Hunza.html">Hunza</a></li>
+                  <li><a href="../htmlpages/Skardu.html">Skardu</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="row">
+                  <div class="col-md-5 item">        
+                  <h3>Quick Links</h3>
+                  <ul class="mt-3">
+                      <li><a href="../htmlpages/about.html">About Us</a></li>
+                      <li><a href="../htmlpages/map.html">Map of Pakistan</a></li>
+                  </ul>
+              </div>
+  
+              <div class="col-md-7 pt-5">
+                <h4 class="text-center">"It is better to see something ones than to hear about it thousand times."</h4>
+                <h5 class="text-center">~Anonymous</h5>
+              </div>
+              </div>
+              </div>
+      </div>
+            <div class="row mt-3">
+              <div class="col item social">
+                  <p class="copyright">My Pakistan My Heaven © 2021</p>
+              </div>
+          </div>
+          </div>
+      </footer>
+  </div>
+
+  <!-- Footer Ends -->
+
+
+ <!--Location Modal 1-->
+ <div class="modal fade" id="mymodal1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.204633794306!2d73.03496491454587!3d33.72952424211626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbefce01e6917%3A0x3e66e0de3e2598c0!2sFaisal%20Masjid%2C%20Islamabad!5e0!3m2!1sen!2s!4v1631030412066!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Location Modal 2 -->
+<div class="modal fade" id="mymodal2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.0221129099396!2d73.06349111454679!3d33.760094440517726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf49c71bac3b%3A0x440c38883a64cd51!2sThe%20Monal%20Islamabad!5e0!3m2!1sen!2s!4v1631030438756!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 3-->
+<div class="modal fade" id="mymodal3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53106.8401141793!2d73.04564993685354!3d33.70435546460975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfe8eb6fcb0d%3A0x8b69f5187f009ac1!2sPakistan%20Monument!5e0!3m2!1sen!2s!4v1631030496494!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 4-->
+<div class="modal fade" id="mymodal4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.2748845635465!2d73.02063991454509!3d33.701835343563054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbe414e0b240b%3A0xa7af0147d7b95ce6!2sFatima%20Jinnah%20Park%2F%20F-9%20Park!5e0!3m2!1sen!2s!4v1631030520786!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!--Location Modal 5-->
+ <div class="modal fade" id="mymodal5" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.40731646003!2d72.92827291454802!3d33.801800338334935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbae588430025%3A0x1c26d4952ed85dd6!2sKhanpur%20Dam%2C%20Haripur%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1631030543743!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Location Modal 6 -->
+<div class="modal fade" id="mymodal6" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13274.848946551787!2d73.12196107339983!3d33.7163943396617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfc04b8cff92e7%3A0x4fc0ece5b8b9d8fb!2sLAKE%20VIEW%20PARK%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1631030566127!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 7-->
+<div class="modal fade" id="mymodal7" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.31604226272!2d73.08340221454658!3d33.75249814091503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf5eef818793%3A0x5d7d2adff678c1e7!2sTrail%205%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1631030594725!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 8-->
+<div class="modal fade" id="mymodal8" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.7912043983733!2d73.07047251454468!3d33.68847024426092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfe4f6af321b%3A0xc48c4b4b2b94f121!2sLok%20Virsa%20Heritage%20Museum!5e0!3m2!1sen!2s!4v1631030618948!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Location Modal 9-->
+<div class="modal fade" id="mymodal9" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.5993990005372!2d73.05307891454558!3d33.71931344264991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfa657ec6d2f%3A0x876566cbe39a4682!2sGinyaki!5e0!3m2!1sen!2s!4v1631030638411!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Location Modal 10-->
+<div class="modal fade" id="mymodal10" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.865480264512!2d73.05433431454613!3d33.73829444165773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf16d96fc917%3A0xf73e570c5d7bf4ae!2sDaman-e-Koh!5e0!3m2!1sen!2s!4v1631030662115!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Location Modal 11-->
+<div class="modal fade" id="mymodal11" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.617015347025!2d73.06605041454632!3d33.74471824132192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf6cf09c699b%3A0xea44f38d4d88195f!2sSaidpur%20Village%20Rd%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1631030704817!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Location Modal 12-->
+<div class="modal fade" id="mymodal12" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52983.26229044199!2d73.36092674085761!3d33.903715895318314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfd715776097a9%3A0x17b2e1d6bfb8e190!2sMurree%2C%20Rawalpindi%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1631036880276!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- HOTELS MODAL BOX -->
+
+    <!-- MARRIOTT HOTEL -->
+<div class="modal fade" id="modal01" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header bg-dark">
+      <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Marriott Hotel</h4>
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body bg-dark">
+      <div class="row">
+        <div class="col-md-12 mt-2">
+        <img src="../images/Punjab/marriottc.jpg" class="img-fluid mg3">
+      </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-sm-6 mt-2">
+      <img src="../images/Punjab/marriottr.jpg"class="img-fluid mg1">
+      <h6 class="text-white text-center">Rooms</h6>
+    </div>
+        <div class="col-sm-6 mt-2">
+        <img src="../images/Punjab/marriottrl.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Lobby</h6>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6 mt-1">
+        <img src="../images/Punjab/marriotto.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Pool Area</h6>
+      </div>
+      <div class="col-sm-6 mt-1">
+        <img src="../images/Punjab/marriottd.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Dining</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer bg-dark">
+
+        <!-- CLOSE -->
+
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+        Close  
+       </button>
+    
+  </div>
+</div>
+</div>
+</div>
+
+<!-- RAMADA HOTEL -->
+
+<div class="modal fade" id="modal02" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header bg-dark">
+      <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Ramada Hotel</h4>
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+        <div class="modal-body bg-dark">
+      <div class="row">
+        <div class="col-md-12 mt-2">
+        <img src="../images/Punjab/ramadaisd1.jpg" class="img-fluid mg3">
+      </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-sm-6 mt-2">
+      <img src="../images/Punjab/ramadaisdr.jpg"class="img-fluid mg1">
+      <h6 class="text-white text-center">Rooms</h6>
+    </div>
+        <div class="col-sm-6 mt-2">
+        <img src="../images/Punjab/ramadaisdl.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Lobby</h6>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6 mt-1">
+        <img src="../images/Punjab/ramadaisdp.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Pool Area</h6>
+      </div>
+      <div class="col-sm-6 mt-1">
+        <img src="../images/Punjab/ramadaisdd.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Dining</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer bg-dark">
+    <!-- CLOSE -->
+
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+        Close  
+       </button>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- SERENA HOTEL -->
+<div class="modal fade" id="modal03" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header bg-dark">
+      <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Serena Hotel</h4>
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body bg-dark">
+      <div class="row">
+        <div class="col-md-12 mt-2">
+        <img src="../images/Punjab/serena3.jpg" class="img-fluid mg3">
+      </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-sm-6 mt-2">
+      <img src="../images/Punjab/serenar.jpg"class="img-fluid mg1">
+      <h6 class="text-white text-center">Rooms</h6>
+    </div>
+        <div class="col-sm-6 mt-2">
+        <img src="../images/Punjab/serenal.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Lobby</h6>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6 mt-1">
+        <img src="../images/Punjab/serenap.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Pool Area</h6>
+      </div>
+      <div class="col-sm-6 mt-1">
+        <img src="../images/Punjab/serenad.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Dining</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer bg-dark">
+
+        <!-- CLOSE -->
+
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+        Close  
+       </button>
+    
+  </div>
+</div>
+</div>
+</div>
+
+<!-- MARGALLA HOTEL -->
+
+<div class="modal fade" id="modal04" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header bg-dark">
+      <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Hotel Margalla</h4>
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body bg-dark">
+      <div class="row">
+        <div class="col-md-12 mt-2">
+        <img src="../images/Punjab/hm1.jpg" class="img-fluid mg3">
+      </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-sm-6 mt-2">
+      <img src="../images/Punjab/hmr.jpg"class="img-fluid mg1">
+      <h6 class="text-white text-center">Rooms</h6>
+    </div>
+        <div class="col-sm-6 mt-2">
+        <img src="../images/Punjab/hml.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Lobby</h6>
+    </div>
+  </div>
+  <div class="row"> 
+      <div class="col-sm-6 mt-1 d-grid mx-auto">
+        <img src="../images/Punjab/hmd.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Dining</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer bg-dark">
+    <!-- CLOSE -->
+
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+        Close  
+       </button>
+  </div>
+</div>
+</div>
+</div>
+
+
+    <!-- PC HOTEL -->
+<div class="modal fade" id="modal05" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header bg-dark">
+      <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">PC (Pearl Continental)</h4>
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body bg-dark">
+      <div class="row">
+        <div class="col-md-12 mt-2">
+        <img src="../images/Punjab/pc1.jpg" class="img-fluid mg3">
+      </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-sm-6 mt-2">
+      <img src="../images/Punjab/pcisdr.jpg"class="img-fluid mg1">
+      <h6 class="text-white text-center">Rooms</h6>
+    </div>
+        <div class="col-sm-6 mt-2">
+        <img src="../images/Punjab/pcisdl.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Lobby</h6>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6 mt-1">
+        <img src="../images/Punjab/pcpisd.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Pool Area</h6>
+      </div>
+      <div class="col-sm-6 mt-1">
+        <img src="../images/Punjab/pcisdd.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Dining</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer bg-dark">
+
+        <!-- CLOSE -->
+
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+        Close  
+       </button>
+    
+  </div>
+</div>
+</div>
+</div>
+
+<!-- HILL VIEW HOTEL -->
+
+<div class="modal fade" id="modal06" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header bg-dark">
+      <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Hill View Hotel</h4>
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body bg-dark">
+      <div class="row">
+        <div class="col-md-12 mt-2">
+        <img src="../images/Punjab/hillview1.jpg" class="img-fluid mg3">
+      </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-sm-6 mt-2">
+      <img src="../images/Punjab/hillviewr.jpg"class="img-fluid mg1">
+      <h6 class="text-white text-center">Rooms</h6>
+    </div>
+        <div class="col-sm-6 mt-2">
+        <img src="../images/Punjab/hillviewl.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Lobby</h6>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6 mt-1 d-grid mx-auto">
+        <img src="../images/Punjab/hillviewd.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Dining</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer bg-dark">
+    <!-- CLOSE -->
+
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+        Close  
+       </button>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ENVOY HOTEL -->
+
+<div class="modal fade" id="modal07" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header bg-dark">
+      <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Envoy Continental Hotel</h4>
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body bg-dark">
+      <div class="row">
+        <div class="col-md-12 mt-2">
+        <img src="../images/Punjab/envoy1.jpg" class="img-fluid mg3">
+      </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-sm-6 mt-2">
+      <img src="../images/Punjab/envoyr.jpg"class="img-fluid mg1">
+      <h6 class="text-white text-center">Rooms</h6>
+    </div>
+        <div class="col-sm-6 mt-2">
+        <img src="../images/Punjab/envoyd.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Dining</h6>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6 mt-1 d-grid mx-auto">
+        <img src="../images/Punjab/envoyl.jpg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Lobby</h6>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal-footer bg-dark">
+    <!-- CLOSE -->
+
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+        Close  
+       </button>
+  </div>
+</div>
+</div>
+</div>
+
+  <!-- Islamabad HOTEL -->
+
+<div class="modal fade" id="modal08" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header bg-dark">
+      <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Islamabad Hotel</h4>
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body bg-dark">
+      <div class="row">
+        <div class="col-md-12 mt-2">
+        <img src="../images/Punjab/isdhotel1.jpeg" class="img-fluid mg3">
+      </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-sm-6 mt-2">
+      <img src="../images/Punjab/isdhotelr.jpeg"class="img-fluid mg1">
+      <h6 class="text-white text-center">Rooms</h6>
+    </div>
+        <div class="col-sm-6 mt-2">
+        <img src="../images/Punjab/isdhotell.jpeg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Lobby</h6>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6 mt-1 d-grid mx-auto">
+        <img src="../images/Punjab/isdhoteld.jpeg" class="img-fluid mg1">
+      <h6 class="text-white text-center">Dining</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer bg-dark">
+    <!-- CLOSE -->
+
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+        Close  
+       </button>
+  </div>
+</div>
+</div>
+</div>
+
+          <!-- DESTINATIONS MODAL BOX -->
+          
+          <!-- FAISAL MASJID MODAL -->
+           <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Faisal Mosque</h4>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/fmn.jpg" class="img-fluid mg1"></div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/fm2.jpg" class="img-fluid mg1"></div>
+                </div>
+                <div class="row">
+                <div class="col-sm-6 mt-2">
+                  <img src="../images/Punjab/fm4.jpeg" class="img-fluid mg1">
+                </div>
+                <div class="col-sm-6 mt-2">
+                  <img src="../images/Punjab/fm3.jpg" class="img-fluid mg1">
+                </div>
+                </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">The Faisal Mosque is a mosque located in Islamabad, Pakistan.         
+                The Faisal Mosque is the largest mosque in Pakistan, located in the national capital city of Islamabad.
+                Completed in 1986, it was designed by Turkish architect Vedat Dalokay, shaped like a desert Bedouin's tent, is an iconic symbol of Islamabad throughout the world.
+              </p>
+              </div>
+              <div class="modal-footer bg-dark">
+              
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+            <!-- THE MONAL MODAL -->
+            <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">The Monal</h4>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/Monal1.jpg" class="img-fluid mg1"></div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/monal3.jpg" class="img-fluid mg1"></div>
+                </div>
+                <div class="row">
+                <div class="col-sm-6 mt-2">
+                  <img src="../images/Punjab/monal2.jpg" class="img-fluid mg1">
+                </div>
+                <div class="col-sm-6 mt-2">
+                  <img src="../images/Punjab/mona5.jpg" class="img-fluid mg1">
+                </div>
+                </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;"> 
+                  THE MONAL restaurant is located on the top of the Margalla hills.
+                  Its reputation is second to none in the city's restaurants. More so, it is famous all because of its breathtaking location.
+                   You can enjoy the delicious food with the mesmerising view of the capital that Monal offers
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+              
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- MONUMENT MUSEUM MODAL -->
+           <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Monument Museum</h4>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/monument2.jpg" class="img-fluid mg1"></div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/monument5.jpg" class="img-fluid mg1"></div>
+                </div>
+                <div class="row">
+                <div class="col-sm-6 mt-2">
+                  <img src="../images/Punjab/monument4.jpg" class="img-fluid mg1">
+                </div>
+                <div class="col-sm-6 mt-2">
+                  <img src="../images/Punjab/monument6.jpg" class="img-fluid mg1">
+                </div>
+                </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                
+              The monument was constructed to symbolize the unity of the Pakistani people. It is dedicated
+              to the people of Pakistan who sacrificed their "today" for a better "tomorrow".
+              Its elevation makes the monument visible
+              from across the Islamabad-Rawalpindi metropolitan area and is a popular tourist destination.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+              
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+    <!-- FATIMA JINNAH PARK MODAL-->
+        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Fatima Jinnah Park</h4>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/fj2.jpg" class="img-fluid mg1"></div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/fj3.jpg" class="img-fluid mg1"></div>
+                </div>
+                <div class="row">
+                <div class="col-sm-6 mt-2">
+                  <img src="../images/Punjab/fj1.jfif" class="img-fluid mg1">
+                </div>
+                <div class="col-sm-6 mt-2">
+                  <img src="../images/Punjab/fj5.jpg" class="img-fluid mg1">
+                </div>
+                </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  It is named after Mādar-e Millat Fatima Jinnah, the younger sister of the founder
+                   of Pakistan Muhammad Ali Jinnah. At 304 hectares (750 acres), it is just smaller than New York's Central Park.
+                   It was designed by Michael Japero, and it was inaugurated in 1992.Most of the park area is effectively a wildlife sanctuary,
+                    except for a few areas of the park that are close to residential districts.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+              
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+            <!-- KHANPUR DAM MODAL-->
+        <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Khanpur Dam</h4>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/khanpur.jpg" class="img-fluid mg1"></div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/khanpur2.jpg" class="img-fluid mg1"></div>
+                </div>
+                <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                  <img src="../images/Punjab/khanpur4.jpg" class="img-fluid mg1">
+                </div>
+                </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  Khanpur Dam is a dam located on the Haro River in Khanpur,
+                   Khyber Pakhtunkhwa about 50 km from Islamabad. It forms Khanpur Lake, a reservoir which supplies drinking water to Islamabad and Rawalpindi and
+                   irrigation water to many of the agricultural and industrial areas surrounding the cities.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+              
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+            <!-- LAKEVIEW PARK MODAL-->
+        <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Lake View Park</h4>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/lakeview.jpg" class="img-fluid mg1"></div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/lakeview4.jpg" class="img-fluid mg1"></div>
+                </div>
+                <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                  <img src="../images/Punjab/lakeview2.jpg" class="img-fluid mg1">
+                </div>
+                </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">Lake View Park 
+                  (also known as Rawal Lake View Point or Rawal Lake Promenade) is a wildlife park,
+                   amusement park and adventure park located near Village Malpur Rawal Lake, on Murree Road
+                    in Islamabad, Pakistan. It runs under the administration of Capital
+                     Development Authority. This park also contains Pakistan's largest bird cage.</p>
+              </div>
+              <div class="modal-footer bg-dark">
+              
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+            <!-- TRAIL 5 MODAL-->
+        <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Trail 5</h4>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/trail51.jpg" class="img-fluid mg1"></div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/trail52.jpg" class="img-fluid mg1"></div>
+                </div>
+                <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                  <img src="../images/Punjab/trail-5.jpg" class="img-fluid mg1">
+                </div>
+                </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;"> The forest on the hills is the
+                  natural habitat for a variety of animals and birds. The forestry department of Pakistan and the
+                  authorities has tried their level best to revive tourism in this area. Every year, many private
+                  clubs along with the authorities conduct a hiking excursion to fetch up the importance of the
+                  Margalla Hills among all age groups. The authorities have made possible for people to visit
+                  the forest, roam about safely, and explore the natural resort. For people who wants to
+                  experience hiking and overnight camping can come here as it is the safest place for the purpose. There are eight trails that vary in distances
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+              
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+            <!-- LOK VIRSA MODAL-->
+    <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-dark">
+            <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Lok Virsa Heritage Museum</h4>
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body bg-dark">
+            <div class="row">
+              <div class="col-sm-6 mt-1">
+              <img src="../images/Punjab/lv1.jpg" class="img-fluid mg1"></div>
+              <div class="col-sm-6 mt-1">
+              <img src="../images/Punjab/lv2.jpg" class="img-fluid mg1"></div>
+            </div>
+            <div class="row">
+            <div class="col-sm-6 mt-2">
+              <img src="../images/Punjab/lv3.jpg" class="img-fluid mg1">
+            </div>
+            <div class="col-sm-6 mt-2">
+              <img src="../images/Punjab/lv4.jpg" class="img-fluid mg1">
+            </div>
+            </div>
+            <p class="text-white mt-3 text-justify" style="font-size: medium;">Heritage Museum,
+               also known as Lok Virsa Museum is a museum administered and managed by Lok Virsa
+                - National Institute of Folk & Traditional Heritage. It is a museum of history and
+                 culture in Islamabad, Pakistan, located on the Shakarparian Hills showcasing the living 
+                 cultures of Pakistan
+            </p>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- GINYAKI MODAL -->
+
+      <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Ginyaki</h4>
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body bg-dark">
+              <div class="row">
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Punjab/ginyaki.jpeg" class="img-fluid mg1"></div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Punjab/ginyaki3.jpeg" class="img-fluid mg1"></div>
+              </div>
+              <div class="row">
+              <div class="col-sm-6 mt-2">
+                <img src="../images/Punjab/ginyaki4.jpeg" class="img-fluid mg1">
+              </div>
+              <div class="col-sm-6 mt-2">
+                <img src="../images/Punjab/ginyaki5.jpeg" class="img-fluid mg1">
+              </div>
+              </div>
+              <p class="text-white mt-3 text-justify" style="font-size: medium;">Ginyaki is a medium sized
+                 restaurant in Jinnah super F-7, Islamabad with a variety of Chinese and Thai food.
+                  Food is served in a bowl and you choose your menu which is added to the bowl.
+                 You can also add soup and add ons for extra price.
+                 They have good taste and good service.</p>
+            </div>
+            <div class="modal-footer bg-dark">
+            
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- DAMAN E KOH MODAL -->
+                <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Daman-e-Koh</h4>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/damane-koh-entrance.jpg" class="img-fluid mg1"></div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/damanekoh1.jpg" class="img-fluid mg1"></div>
+                </div>
+                <div class="row">
+                <div class="col-sm-6 mt-2 d d-grid mx-auto">
+                  <img src="../images/Punjab/damanekoh3.jpg " class="img-fluid mg1">
+                </div>
+                </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">Daman-e-Koh is a viewing point and hill top garden north of Islamabad and located in the middle of the Margalla Hills.
+                  The Southern spot is the main attraction as it provides a panoramic view of Islamabad. The visitors experience a unique view of Faisal Mosque, the newly constructed Seventh Avenue (Islamabad) and Rawal Lake.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+              
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- SAIDPUR VILLAGE MODAL -->
+
+                  <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Saidpur Village </h4>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/saidpur1.jpg" class="img-fluid mg1"></div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Punjab/saidpur.jpg" class="img-fluid mg1"></div>
+                </div>
+                <div class="row">
+                <div class="col-sm-6 mt-2">
+                  <img src="../images/Punjab/saidpurc.jpg" class="img-fluid mg1">
+                </div>
+                <div class="col-sm-6 mt-2">
+                  <img src="../images/Punjab/saidpur3.jpg" class="img-fluid mg1">
+                </div>
+                </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  Saidpur, a little quaint village, famous for its pottery, is part of Islamabad today.
+                   It is located off the Hill Road to the east of Daman-e-Koh.
+                   Saidpur was founded by Sultan Said Khan, son of Sultan Sarang Khan.
+                   He gave his daughter in marriage to Mughal Prince Saleem who later became Emperor Jahangir.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+              
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!-- MURREE MODAL -->
+
+          <div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-dark">
+                  <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Murree </h4>
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <div class="row">
+                    <div class="col-sm-6 mt-1">
+                    <img src="../images/Punjab/murree.jpg" class="img-fluid mg1"></div>
+                    <div class="col-sm-6 mt-1">
+                    <img src="../images/Punjab/murree2.jpg" class="img-fluid mg1"></div>
+                  </div>
+                  <div class="row">
+                  <div class="col-sm-6 mt-2">
+                    <img src="../images/Punjab/murree3.jpg" class="img-fluid mg1">
+                  </div>
+                  <div class="col-sm-6 mt-2">
+                    <img src="../images/Punjab/murree4.jpg" class="img-fluid mg1">
+                  </div>
+                  </div>
+                  <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                    Murree is a mountain resort town, located in the Galyat region of the Pir Panjal Range, within the Rawalpindi District of Punjab, Pakistan. It forms the outskirts of the Islamabad-Rawalpindi metropolitan area, and is about 30 km northeast of Islamabad. It has average altitude of 2,291 metres.
+                  </p>
+                </div>
+                <div class="modal-footer bg-dark">
+                
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+
+</body>
+</html>
+
+<script>
+
+        // DESTINATIONS
+function faisal() {
+        $('#modal1').modal('show');
+};   
+function monal() {
+        $('#modal2').modal('show');
+};
+function monument() {
+        $('#modal3').modal('show');
+    };
+function fatima() {
+        $('#modal4').modal('show');
+    };     
+function khanpur() {
+        $('#modal5').modal('show');
+    };
+function lakeview() {
+        $('#modal6').modal('show');
+    };
+function trail() {
+        $('#modal7').modal('show');
+    };
+function museum() {
+        $('#modal8').modal('show');
+    };
+    function ginyaki() {
+        $('#modal9').modal('show');
+    };
+function damanekoh() {
+        $('#modal10').modal('show');
+    };
+function village() {
+        $('#modal11').modal('show');
+    };
+    function murree() {
+        $('#modal12').modal('show');
+    };
+
+    // HOTELS
+
+    function marriot() {
+        $('#modal01').modal('show');
+};   
+function ramada() {
+        $('#modal02').modal('show');
+};
+function serena() {
+        $('#modal03').modal('show');
+    };
+function margalla() {
+        $('#modal04').modal('show');
+    };     
+function pc() {
+        $('#modal05').modal('show');
+    };
+function hillview() {
+        $('#modal06').modal('show');
+    };
+function envoy() {
+        $('#modal07').modal('show');
+    };
+function isdhotel() {
+        $('#modal08').modal('show');
+    };
+
+//     // NAVBAR
+//     $(document).ready(function(){
+// $("#navbar").fadeToggle(1);
+// $("#navbar").removeClass("hidden");
+// $("#navbar").show(3000);
+
+// });
+   
+  
+    //  VIEW MORE
+    $(document).ready(function(){
+      $("#view").click(function(){
+        $("#viewmore").fadeIn("slow")
+        $("#view").hide();
+        
+      });
+});
+    // VIEW MORE HOTELS
+     $(document).ready(function(){
+      $("#view1").click(function(){
+        $("#viewmore1").fadeIn("slow")
+        $("#view1").hide();
+    
+      });
+
+
+});
+
+</script>

@@ -1,0 +1,669 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quetta | My Pakistan My Heaven</title>
+                <!-- STYLING -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/styling.css">
+      <!-- BOOTSTRAP, POPPER AND JQUERY -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/styling.js"></script>
+        <!-- Animation -->
+    <link rel="stylesheet" href="../css/animation.css">
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../icons/bootstrap-icons.css">
+</head>
+<body>
+                 <!-- Navbar -->
+  <div class="container-fluid p-0 fixed-top">
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg px-3 py-2 navbar-light" id="navbar">
+        <!-- LOGO -->
+        <a class="navbar-brand p-0" href="../index.html">
+          <!--               My Pakistan My Heaven-->
+          <img class="p-0" src="../images/logo.png" height="75">
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- HOME -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-auto">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../htmlpages/about.html">About</a>
+                </li>
+                <!-- DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Sindh.html">Sindh</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Punjab.html">Punjab</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Balochistan.html">Balochistan</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Kpk.html">Kpk</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Gilgit.html">Gilgit</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tourist Guide
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Karachi.html">Karachi</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Lahore.html">Lahore</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Isd.html">Islamabad</a></li>
+                    </ul>
+                </li>
+                <!-- OTHER ITEMS -->
+                <li class="nav-item">
+                  <a class="nav-link" href="../htmlpages/Feedback.html">Feedback</a>
+              </li>
+                <li class="header-btn mt-1">
+                    <a class="nav-link btn btn-dark p-1 px-4" href="../htmlpages/map.html">Map</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+    <!-- NAVBAR END  -->
+
+      <!-- COVER PIC -->
+  <div>
+        <img src="../images/Balochistan/quetta1.jpg" class="img-fluid cover" style="width: 100%;">
+</div>
+  
+      <!-- DESTINATIONS -->
+<div class="container-fluid mt-5">
+<h1 class="text-center text-dark"><b>Destinations</b></h1>
+      <!-- 1ST ROW -->
+    <!-- Des 1 -->
+<div class="row ">
+<div class="col-md-3 des">
+  <div class="card" onclick="residency()" id="quaid" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Balochistan/quaidr2.jpg" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal1"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Ziarat Residency</h5>
+    </div>
+    </div>
+</div> 
+</div>
+      <!-- Des 2 -->
+      <div class="col-md-3 des ">
+        <div class="card" onclick="hanna()" id="m1" style="border: none;">
+            <img class="card-img-top img-fluid img1" src="../images/Balochistan/hannalake.jpg" alt="Card image"></div>
+            <div class="card-body">
+              <div class="row">
+              <div class="col-md-2">
+                <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal2"></i>
+              </div>
+              <div class="col-md-10 ">
+            <h5 class="card-title text-center">Hanna Lake</h5>
+          </div>
+          </div>
+      </div> 
+      </div>
+
+      <!-- Des 3 -->
+<div class="col-md-3 des">
+<div class="card" onclick="chiltan()" id="d1" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Balochistan/hazarganji.jpg" alt="Card image"></div>
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-2">
+      <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal3"></i>
+    </div>
+    <div class="col-md-10 ">
+  <h5 class="card-title text-center">Hazarganji Chiltan National park</h5>
+</div>
+</div>
+</div> 
+</div>
+
+      <!-- Des 4 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="urak()" id="pg1" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Balochistan/urak1.jpg" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal4"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Hanna Urak Waterfall</h5>
+    </div>
+    </div>
+</div> 
+</div>
+
+</div>
+</div>
+
+ <!-- HOTELS -->
+ <div class="container-fluid mt-5">
+    <h1 class="text-center text-dark"><b>Hotels</b></h1>
+              <!-- 1st row HOTELS-->
+    <div class="row justify-content-center">
+    
+    <!-- 1st hotel -->
+    <div class="col-md-3 des">
+    <div class="card" onclick="bloom()" id="" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Balochistan/bloomstar2.jpg" alt="Card image">
+      <div class="card-body">
+      <h5 class="card-title text-center">Bloom Star Hotel</h5>
+    </div>
+    </div> 
+    </div>
+    
+    <!-- 2nd hotel -->
+    <div class="col-md-3 des">
+    <div class="card" onclick="serena()" id="" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Balochistan/quetta-serena-hotel.jpg" alt="Card image">
+      <div class="card-body">
+      <h5 class="card-title text-center">Serena Hotel</h5>
+    </div>
+    </div> 
+    </div>
+    
+    <!-- 3rd hotel -->
+    
+    <div class="col-md-3 des">
+      <div class="card" onclick="zulfiqar()" id="" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Balochistan/zulfiqar1.jpg" alt="Card image">
+        <div class="card-body">
+        <h5 class="card-title text-center">Zulfiqar Hotel</h5>
+      </div>
+      </div> 
+      </div>
+    
+    </div>
+
+</div>
+
+    <!-- Footer -->
+    <div class="footer-clean mt-5">
+      <footer>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                <div class="row ">
+              <h3 class="col-12 p-0 text-center">Cities Of Pakistan</h3>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Karachi.html">Karachi</a></li>
+                  <li><a href="../htmlpages/Hyd.html">Hyderabad</a></li>
+                  <li><a href="../htmlpages/Sukkur.html">Sukkur</a></li>
+                  <li><a href="../htmlpages/Lahore.html">Lahore</a></li>
+                  <li><a href="../htmlpages/Isd.html">Islamabad</a></li>
+                  <li><a href="../htmlpages/Faisalabad.html">Faisalabad</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Bahawalpur.html">Bahawalpur</a></li>
+                  <li><a href="../htmlpages/Multan.html">Multan</a></li>
+                  <li><a href="../htmlpages/Quetta.html">Quetta</a></li>
+                  <li><a href="../htmlpages/Gawadar.html">Gawadar</a></li>
+                  <li><a href="../htmlpages/Peshawer.html">Peshawer</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Abbottabad.html">Abbottabad</a></li>
+                  <li><a href="../htmlpages/Swat.html">Swat</a></li>
+                  <li><a href="../htmlpages/Gilgitc.html">Gilgit</a></li>
+                  <li><a href="../htmlpages/Hunza.html">Hunza</a></li>
+                  <li><a href="../htmlpages/Skardu.html">Skardu</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="row">
+                  <div class="col-md-5 item">        
+                  <h3>Quick Links</h3>
+                  <ul class="mt-3">
+                      <li><a href="../htmlpages/about.html">About Us</a></li>
+                      <li><a href="../htmlpages/map.html">Map of Pakistan</a></li>
+                  </ul>
+              </div>
+  
+              <div class="col-md-7 pt-5">
+                <h4 class="text-center">"It is better to see something ones than to hear about it thousand times."</h4>
+                <h5 class="text-center">~Anonymous</h5>
+              </div>
+              </div>
+              </div>
+      </div>
+            <div class="row mt-3">
+              <div class="col item social">
+                  <p class="copyright">My Pakistan My Heaven © 2021</p>
+              </div>
+          </div>
+          </div>
+      </footer>
+  </div>
+  <!-- Footer Ends -->
+
+<!-- HOTELS MODAL BOX -->
+
+        <!-- Bloomstar HOTEL -->
+        <div class="modal fade" id="modal01" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Bloom Star Hotel</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                  <div class="row">
+                    <div class="col-md-12 mt-2">
+                    <img src="../images/Balochistan/bloomstar1.jpg" class="img-fluid mg3">
+                  </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-sm-6 mt-2">
+                  <img src="../images/Balochistan/bloomstarr.jpg"class="img-fluid mg1">
+                  <h6 class="text-white text-center">Rooms</h6>
+                </div>
+                  <div class="col-sm-6 mt-2">
+                  <img src="../images/Balochistan/bloomstarl.jpg" class="img-fluid mg1">
+                  <h6 class="text-white text-center">Lobby</h6>
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col-sm-6 mt-1 d-grid mx-auto">
+                  <img src="../images/Balochistan/bloomstard.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Dining</h6>
+              </div>
+              </div>
+        
+              </div>
+      
+            <div class="modal-footer bg-dark">
+      
+                  <!-- CLOSE -->
+
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close  
+                 </button>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+      
+        <!-- SERENA HOTEL -->
+      
+        <div class="modal fade" id="modal02" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Serena Hotel</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-md-12 mt-2">
+                  <img src="../images/Balochistan/serena1.jpg" class="img-fluid mg3">
+                </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-sm-6 mt-2">
+                <img src="../images/Balochistan/serenar.jpg"class="img-fluid mg1">
+                <h6 class="text-white text-center">Rooms</h6>
+              </div>
+                <div class="col-sm-6 mt-2">
+                <img src="../images/Balochistan/serenad.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Dining</h6>
+                </div>
+              </div>
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Balochistan/serenal.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Lobby</h6>
+              </div>
+                <div class="col-sm-6 mt-1">
+                  <img src="../images/Balochistan/serenap.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Pool Area</h6>
+      
+                </div>
+              </div>
+      
+            </div>
+      
+            <div class="modal-footer bg-dark">
+              <!-- CLOSE -->
+
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close  
+                 </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      
+      <!-- ZULFIQAR HOTEL -->
+        <div class="modal fade" id="modal03" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Zulfiqar Hotel</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-md-12 mt-2">
+                  <img src="../images/Balochistan/zulfiqar2.jpg" class="img-fluid mg3">
+                </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-sm-6 mt-2">
+                <img src="../images/Balochistan/zulfiqarr.jpg"class="img-fluid mg1">
+                <h6 class="text-white text-center">Rooms</h6>
+              </div>
+                  <div class="col-sm-6 mt-2">
+                  <img src="../images/Balochistan/zulfiqarl.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Lobby</h6>
+              </div>
+            </div>
+            </div>
+      
+            <div class="modal-footer bg-dark">
+      
+                  <!-- CLOSE -->
+
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close  
+                 </button>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+
+<!-- DESTINATIONS MODAL BOX -->
+              
+              <!-- QUAID E AZAM RESIDEN CY MODAL -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Ziarat Residency</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/quaidr1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/quaidr3.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Balochistan/quaidr2.jfif" class="img-fluid mg1"></div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">Quaid-e-Azam Residency, also known as Ziarat Residency, is located in Ziarat, Balochistan, Pakistan. It is where Muhammad Ali Jinnah spent the last two months and ten days of his life, nursed by A. S. Nathaniel. It is the most famous landmark of the city, constructed in 1892 during the British Raj.</p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+                 <!--HANNA LAKE MODAL -->
+         <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Hanna Lake</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/hannalake1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/hannalake2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Balochistan/hannalake3.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  Hanna Lake is a lake in Urak Valley near Quetta city in Balochistan Province, in southwestern Pakistan. It is surrounded by mountains.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+         <!--CHILTON NATIONAL PARK MODAL -->
+         <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Hazarganji Chiltan National Park</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/hazarganji1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/hazarganji2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Balochistan/hazarganji3.jpg" class="img-fluid mg1"></div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  Hazarganji Chiltan National Park is a national park in the Mastung District of western Balochistan Province of Pakistan. It lies between Chiltan on its west and Hazarganji on the east. The park was established in 1980 to provide the habitat to rare Chiltan ibexes found in the area.
+                </p>
+              </div>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+         <!--HANNA URAK MODAL -->
+         <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Hanna Urak Waterfall</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/urak4.jfif"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/urak2.jfif" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Balochistan/urak3.jfif" class="img-fluid mg1"></div>
+                
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  Hanna-Urak Waterfall is a waterfall located near Hanna Lake in Urak Valley, Quetta District of Balochistan the province of Pakistan. It is a small waterfall surrounded by mountains.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+         <!--Location Modal 1-->
+ <div class="modal fade" id="mymodal1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.016055421738!2d67.723862014244!3d30.378901981761874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392d20764eef8369%3A0x1bcd25b95a77614!2sZiarat%20residency!5e0!3m2!1sen!2s!4v1630964924920!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Location Modal 2 -->
+<div class="modal fade" id="mymodal2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6892.712960647139!2d67.09681567207143!3d30.255422627223872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ed2d8b19bd6242f%3A0xb9c4bcd77e898859!2sHanna%20Lake!5e0!3m2!1sen!2s!4v1631004471252!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 3-->
+<div class="modal fade" id="mymodal3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.503355921969!2d66.73485061423884!3d30.222719281817778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ed2fc3d3ba59563%3A0xd32034f8168580ba!2sHazarganji-Chiltan%20National%20Park!5e0!3m2!1sen!2s!4v1631004500766!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 4-->
+<div class="modal fade" id="mymodal4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.754419685195!2d67.1718324142405!3d30.272577681799934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ed2d9b327e79c13%3A0x1a92480a5aa5bce0!2sHanna%20Urak%20Pool!5e0!3m2!1sen!2s!4v1631004651419!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+<script>
+
+        //  VIEW MORE
+        $(document).ready(function(){
+      $("#view").click(function(){
+        $("#viewmore").fadeIn("slow")
+        $("#view").hide();
+        
+      });
+});
+
+// DESTINATIONS
+function residency() {
+$('#modal1').modal('show');
+};   
+function chiltan() {
+$('#modal2').modal('show');
+};
+function urak() {
+$('#modal3').modal('show');
+};
+function hanna() {
+$('#modal4').modal('show');
+};
+
+// HOTELS
+
+function bloom() {
+          $('#modal01').modal('show');
+};   
+function serena() {
+          $('#modal02').modal('show');
+};
+function  zulfiqar() {
+          $('#modal03').modal('show');
+      };
+</script>

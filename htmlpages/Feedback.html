@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAP | My Pakistan My Heaven</title>
+    <!-- STYLING -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/styling.css">
+    <!-- BOOTSTRAP, POPPER AND JQUERY -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/styling.js"></script>
+    <!-- Animation -->
+    <link rel="stylesheet" href="../css/animation.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../icons/bootstrap-icons.css">
+</head>
+
+<style>
+    input[type=text], select, textarea {
+        width: 50%;
+        padding: 12px;
+        border: 1px solid rgb(70, 68, 68);
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    input[type=email], select, textarea {
+        width: 50%;
+        padding: 12px;
+        border: 1px solid rgb(70, 68, 68);
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    input[type=submit] {
+        background-color: rgb(37, 116, 161);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+    .cont1{
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+<body>
+
+
+  <!-- Navbar -->
+  <div class="container-fluid p-0 fixed-top">
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg px-3 py-2 navbar-light" id="navbar">
+        <!-- LOGO -->
+        <a class="navbar-brand p-0" href="../index.html">
+            <!--               My Pakistan My Heaven-->
+            <img class="p-0" src="../images/logo.png" height="75">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- HOME -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-auto">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../htmlpages/about.html">About</a>
+                </li>
+                <!-- DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Sindh.html">Sindh</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Punjab.html">Punjab</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Balochistan.html">Balochistan</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Kpk.html">Kpk</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Gilgit.html">Gilgit</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tourist Guide
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Karachi.html">Karachi</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Lahore.html">Lahore</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Isd.html">Islamabad</a></li>
+                    </ul>
+                </li>
+                <!-- OTHER ITEMS -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../htmlpages/Feedback.html">Feedback</a>
+                </li>
+                <li class="header-btn mt-1">
+                    <a class="nav-link btn btn-dark p-1 px-4" href="../htmlpages/map.html">Map</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+    <!-- NAVBAR END  -->
+
+
+
+<div class="container-fluid pages-banner">
+    <div class="container">
+        <h1 class="text-white font-weight-bold py-5" >Feedback</h1>
+    </div>
+</div>
+
+<br />
+<br />
+<div class="container cont1">
+    <form>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+                <input type="email" id="email" name="mailid" placeholder="Your email..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="feed_back">Feed Back</label>
+            </div>
+            <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+            <input type="submit" value="Submit" style="text-align:center; align-content:right">
+        </div>
+    </div>
+        </form>
+</div>
+
+
+        <!-- Footer -->
+        <div class="footer-clean mt-5">
+            <footer>
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-5">
+                      <div class="row ">
+                    <h3 class="col-12 p-0 text-center">Cities Of Pakistan</h3>
+                    <div class="col-md-3 mt-2 item">
+                      <ul>
+                        <li><a href="../htmlpages/Karachi.html">Karachi</a></li>
+                        <li><a href="../htmlpages/Hyd.html">Hyderabad</a></li>
+                        <li><a href="../htmlpages/Sukkur.html">Sukkur</a></li>
+                        <li><a href="../htmlpages/Lahore.html">Lahore</a></li>
+                        <li><a href="../htmlpages/Isd.html">Islamabad</a></li>
+                        <li><a href="../htmlpages/Faisalabad.html">Faisalabad</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 mt-2 item">
+                      <ul>
+                        <li><a href="../htmlpages/Bahawalpur.html">Bahawalpur</a></li>
+                        <li><a href="../htmlpages/Multan.html">Multan</a></li>
+                        <li><a href="../htmlpages/Quetta.html">Quetta</a></li>
+                        <li><a href="../htmlpages/Gawadar.html">Gawadar</a></li>
+                        <li><a href="../htmlpages/Peshawer.html">Peshawer</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 mt-2 item">
+                      <ul>
+                        <li><a href="../htmlpages/Abbottabad.html">Abbottabad</a></li>
+                        <li><a href="../htmlpages/Swat.html">Swat</a></li>
+                        <li><a href="../htmlpages/Gilgitc.html">Gilgit</a></li>
+                        <li><a href="../htmlpages/Hunza.html">Hunza</a></li>
+                        <li><a href="../htmlpages/Skardu.html">Skardu</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                        <div class="col-md-5 item">        
+                        <h3>Quick Links</h3>
+                        <ul class="mt-3">
+                            <li><a href="../htmlpages/about.html">About Us</a></li>
+                            <li><a href="../htmlpages/map.html">Map of Pakistan</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-md-7 pt-5">
+                        <h4 class="text-center">"It is better to see something ones than to hear about it thousand times."</h4>
+                        <h5 class="text-center">~Anonymous</h5>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+                  <div class="row mt-3">
+                    <div class="col item social">
+                        <p class="copyright">My Pakistan My Heaven © 2021</p>
+                    </div>
+                </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Footer Ends -->
+</body>
+
+</html>

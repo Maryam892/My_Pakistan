@@ -1,0 +1,170 @@
+body {
+    overflow-x: hidden;
+}
+
+.box,
+.box1 {
+    transition: 0.5s;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.box:hover,
+.box1:hover {
+    box-shadow: 0 9px 10px 0 rgb(32 33 36 / 60%);
+    border-radius: 5px;
+    border: 2px solid rgb(199, 212, 202);
+
+}
+
+h2,h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* PROVINCES */
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+.box1 {
+    display: block;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+}
+
+.box {
+    display: block;
+    animation-name: moveInleft;
+    animation-duration: 3s;
+}
+
+.footer-clean {
+    padding: 50px 0;
+    background-image: url(../images/Slider/pexels-tobi-463734.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: #ffffff;
+
+}
+
+.footer-clean h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-clean ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-clean ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+    opacity: 1;
+    border-bottom: 2px solid white;
+}
+
+.footer-clean .item.social {
+    text-align: center;
+}
+
+@media (max-width:767px) {
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-clean .item.social {
+        text-align: center;
+    }
+}
+
+.footer-clean .item.social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-clean .item.social > a:hover {
+    opacity: 0.9;
+}
+
+@media (max-width:991px) {
+    .footer-clean .item.social > a {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer-clean .item.social > a {
+        margin-top: 10px;
+    }
+}
+
+.footer-clean .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+
+.carousel.slide img {
+    height: 650px ;
+    object-fit: cover;
+    width: 100%
+}
+
+h3, h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

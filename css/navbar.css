@@ -1,0 +1,33 @@
+#navbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    z-index: 2;
+}
+
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.header-btn a {
+    margin-left: 10px !important;
+    color: #FFF !important;
+}
+
+.navbar ul li.nav-item a {
+    color: #1F1F1F !important;
+    font-weight: 500;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    font-size: 16px;
+    border-bottom: 3px solid transparent;
+}
+
+
+.navbar ul li.nav-item a:hover {
+    border-bottom: 3px solid #1F1F1F;
+}
+
+.dropdown-item:hover {
+    font-size: medium;
+}

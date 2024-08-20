@@ -1,0 +1,1527 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunza | My Pakistan My Heaven</title>
+                <!-- STYLING -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/styling.css">
+      <!-- BOOTSTRAP, POPPER AND JQUERY -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/styling.js"></script>
+        <!-- Animation -->
+    <link rel="stylesheet" href="../css/animation.css">
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../icons/bootstrap-icons.css">
+</head>
+<body>
+                   <!-- Navbar -->
+  <div class="container-fluid p-0 fixed-top">
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg px-3 py-2 navbar-light" id="navbar">
+        <!-- LOGO -->
+        <a class="navbar-brand p-0" href="../index.html">
+          <!--               My Pakistan My Heaven-->
+          <img class="p-0" src="../images/logo.png" height="75">
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- HOME -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-auto">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../htmlpages/about.html">About</a>
+                </li>
+                <!-- DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Sindh.html">Sindh</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Punjab.html">Punjab</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Balochistan.html">Balochistan</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Kpk.html">Kpk</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Gilgit.html">Gilgit</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tourist Guide
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Karachi.html">Karachi</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Lahore.html">Lahore</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Isd.html">Islamabad</a></li>
+                    </ul>
+                </li>
+                <!-- OTHER ITEMS -->
+                <li class="nav-item">
+                  <a class="nav-link" href="../htmlpages/Feedback.html">Feedback</a>
+              </li>
+                <li class="header-btn mt-1">
+                    <a class="nav-link btn btn-dark p-1 px-4" href="../htmlpages/map.html">Map</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+    <!-- NAVBAR END  -->
+
+
+           <!-- COVER PIC -->
+  <div>
+    <img src="../images/Giglit/hunza7.jpg" class="img-fluid cover" style="width: 100%;">
+</div>
+
+      <!-- DESTINATIONS -->
+<div class="container-fluid mt-5">
+<h1 class="text-center text-dark"><b>Destinations</b></h1>
+      <!-- 1ST ROW -->
+    <!-- Des 1 -->
+<div class="row ">
+<div class="col-md-3 des">
+  <div class="card" onclick="attabad()" id="minar" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Giglit/attabad.jpg" alt="Card image">
+      </div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal1"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Attabad Lake</h5>
+    </div>
+    </div>
+</div> 
+</div>
+
+      <!-- Des 2 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="altit()" id="mosque" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Giglit/altit-fort.jpg" alt="Card image">
+      </div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal2"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Altit Fort</h5>
+    </div>
+    </div>
+</div> 
+</div>
+
+      <!-- Des 3 -->
+<div class="col-md-3 des">
+<div class="card" onclick="baltit()" id="have" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Giglit/baltit.jpg" alt="Card image">
+  </div>
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-2">
+      <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal3"></i>
+    </div>
+    <div class="col-md-10 ">
+  <h5 class="card-title text-center">Baltit Fort</h5>
+</div>
+</div>
+</div> 
+</div>
+
+
+      <!-- Des 4 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="satrangi()" id="garden" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Giglit/satrangi.jpg" alt="Card image">
+      </div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal4"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Satrangi Lake</h5>
+    </div>
+    </div>
+</div> 
+</div>
+
+
+</div>
+<div class="d-grid col-md-2 mx-auto">
+    <button class="btn btn-dark text-white text-center" id="view">View More</button>
+    </div>
+    
+    <!-- 2nd row DESTINATIONS -->
+    <div id="viewmore">
+    <div class="row mt-2 justify-content-center">
+        <!-- Des 5 -->
+    <div class="col-md-3 des">
+      <div class="card" onclick="passu()" id="town" style="border: none;">
+          <img class="card-img-top img-fluid img1" src="../images/Giglit/passu.jpg" alt="Card image">
+          </div>
+          <div class="card-body">
+            <div class="row">
+            <div class="col-md-2">
+              <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal5"></i>
+            </div>
+            <div class="col-md-10 ">
+          <h5 class="card-title text-center">Passu Glacier</h5>
+        </div>
+        </div>
+    </div> 
+    </div>
+    
+    
+    <!-- Des 6 -->
+    <div class="col-md-3 des">
+      <div class="card" onclick="khunjerab()" id="mahal" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Giglit/khunjerab.jpg" alt="Card image">
+      </div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal6"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Khunjerab Pass</h5>
+    </div>
+    </div>
+</div> 
+</div>
+
+    
+    <!-- Des 7 -->
+    <div class="col-md-3 des">
+    <div class="card" onclick="hussaini()" id="l1" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Giglit/bridge.jpg" alt="Card image">
+      </div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal7"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Hussaini Suspension Bridge</h5>
+    </div>
+    </div>
+</div> 
+</div>
+
+
+    
+        <!-- Des 8 -->
+    <div class="col-md-3 des">
+    <div class="card" onclick="borith()" id="l1" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Giglit/Lake_Borith.jfif" alt="Card image">
+      </div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal8"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Borith Lake</h5>
+    </div>
+    </div>
+</div> 
+</div>
+
+
+    
+       <!-- Row 3 Destinations -->
+<div class="row mt-2 justify-content-center">
+  <!-- Des 9 -->
+<div class="col-md-3 des">
+<div class="card" onclick="batura()" id="town" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Giglit/batura.jpg" alt="Card image">
+    </div>
+    <div class="card-body">
+      <div class="row">
+      <div class="col-md-2">
+        <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal9"></i>
+      </div>
+      <div class="col-md-10 ">
+    <h5 class="card-title text-center">Batura Glacier</h5>
+  </div>
+  </div>
+</div> 
+</div>
+
+<!-- Des 10 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="rakaposhi()" id="mahal" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Giglit/rakaposhi1.jpg" alt="Card image">
+    </div>
+    <div class="card-body">
+      <div class="row">
+      <div class="col-md-2">
+        <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal10"></i>
+      </div>
+      <div class="col-md-10 ">
+    <h5 class="card-title text-center">Rakaposhi View Point</h5>
+  </div>
+  </div>
+</div> 
+</div>
+
+
+  <!-- Des 11 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="ladyfinger()" id="mahal" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Giglit/ladyfinger.jpg" alt="Card image">
+    </div>
+    <div class="card-body">
+      <div class="row">
+      <div class="col-md-2">
+        <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal11"></i>
+      </div>
+      <div class="col-md-10 ">
+    <h5 class="card-title text-center">Lady Finger Peak</h5>
+  </div>
+  </div>
+</div> 
+</div>
+
+
+    <!-- Des 12 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="hopar()" id="mahal" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Giglit/hoparvalley.jpg" alt="Card image">
+    </div>
+    <div class="card-body">
+      <div class="row">
+      <div class="col-md-2">
+        <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal12"></i>
+      </div>
+      <div class="col-md-10 ">
+    <h5 class="card-title text-center">Hopar Valley</h5>
+  </div>
+  </div>
+</div> 
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- HOTELS -->
+<div class="container-fluid mt-5">
+    <h1 class="text-center text-dark"><b>Hotels</b></h1>
+              <!-- 1st row HOTELS-->
+    <div class="row ">
+    
+    
+          <!-- 1st hotel -->
+    <div class="col-md-3 des">
+      <div class="card" onclick="hardrock()" id="" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Giglit/hardrock1.jpg" alt="Card image">
+        <div class="card-body">
+        <h5 class="card-title text-center">Hard Rock Resort & Villas</h5>
+      </div>
+      </div> 
+      </div>
+    
+    
+    <!-- 2nd hotel -->
+    <div class="col-md-3 des">
+    <div class="card" onclick="luxus()" id="" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Giglit/luxus.jpg" alt="Card image">
+      <div class="card-body">
+      <h5 class="card-title text-center">Luxus Hunza</h5>
+    </div>
+    </div> 
+    </div>
+    
+    <!-- 3rd hotel -->
+    <div class="col-md-3 des">
+    <div class="card" onclick="cottage()" id="" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Giglit/cottage.jpg" alt="Card image">
+      <div class="card-body">
+      <h5 class="card-title text-center">Tourist Cottage</h5>
+    </div>
+    </div> 
+    </div>
+    
+    <!-- 4th hotel -->
+    <div class="col-md-3 des">
+      <div class="card" onclick="roomy()" id="" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Giglit/roomy.jpg" alt="Card image">
+        <div class="card-body">
+        <h5 class="card-title text-center">Roomy Yurts</h5>
+      </div>
+      </div> 
+      </div>
+    
+    </div>
+    </div>
+
+    <div class="d-grid col-md-2 mx-auto">
+      <button class="btn btn-dark text-white text-center" id="view1">View More</button>
+      </div>
+  
+    <!-- 2nd row HOTELS -->
+  
+  <div id="viewmore1">
+    <div class="row mt-2 justify-content-center">
+  
+          <!-- 5th hotel -->
+            <div class="col-md-3 des">
+    <div class="card" onclick="eagle()" id="" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Giglit/eagles1.jpg" alt="Card image">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-center">Eagle's Nest</h5>
+      </div>
+      </div>
+
+      <!-- 6th hotel -->
+      <div class="col-md-3 des">
+        <div class="card" onclick="fairyland()" id="" style="border: none;">
+            <img class="card-img-top img-fluid img1" src="../images/Giglit/fairyland.jpg" alt="Card image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Fariyland</h5>
+          </div>
+          </div>
+</div>
+</div>
+
+    <!-- Footer -->
+    <div class="footer-clean mt-5">
+      <footer>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                <div class="row ">
+              <h3 class="col-12 p-0 text-center">Cities Of Pakistan</h3>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Karachi.html">Karachi</a></li>
+                  <li><a href="../htmlpages/Hyd.html">Hyderabad</a></li>
+                  <li><a href="../htmlpages/Sukkur.html">Sukkur</a></li>
+                  <li><a href="../htmlpages/Lahore.html">Lahore</a></li>
+                  <li><a href="../htmlpages/Isd.html">Islamabad</a></li>
+                  <li><a href="../htmlpages/Faisalabad.html">Faisalabad</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Bahawalpur.html">Bahawalpur</a></li>
+                  <li><a href="../htmlpages/Multan.html">Multan</a></li>
+                  <li><a href="../htmlpages/Quetta.html">Quetta</a></li>
+                  <li><a href="../htmlpages/Gawadar.html">Gawadar</a></li>
+                  <li><a href="../htmlpages/Peshawer.html">Peshawer</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Abbottabad.html">Abbottabad</a></li>
+                  <li><a href="../htmlpages/Swat.html">Swat</a></li>
+                  <li><a href="../htmlpages/Gilgitc.html">Gilgit</a></li>
+                  <li><a href="../htmlpages/Hunza.html">Hunza</a></li>
+                  <li><a href="../htmlpages/Skardu.html">Skardu</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="row">
+                  <div class="col-md-5 item">        
+                  <h3>Quick Links</h3>
+                  <ul class="mt-3">
+                      <li><a href="../htmlpages/about.html">About Us</a></li>
+                      <li><a href="../htmlpages/map.html">Map of Pakistan</a></li>
+                  </ul>
+              </div>
+  
+              <div class="col-md-7 pt-5">
+                <h4 class="text-center">"It is better to see something ones than to hear about it thousand times."</h4>
+                <h5 class="text-center">~Anonymous</h5>
+              </div>
+              </div>
+              </div>
+      </div>
+            <div class="row mt-3">
+              <div class="col item social">
+                  <p class="copyright">My Pakistan My Heaven © 2021</p>
+              </div>
+          </div>
+          </div>
+      </footer>
+  </div>
+
+  <!-- Footer Ends -->
+
+<!-- DESTINATIONS MODAL BOX -->
+              
+              <!-- Attabad Lake MODAL -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Attabad Lake</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/attabad1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/attabad2.jfif" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 ">
+                <img src="../images/Giglit/attabad3.jpg" class="img-fluid mg1"></div>
+                <div class="col-sm-6 mt-2 ">
+                  <img src="../images/Giglit/attabad4.jpg" class="img-fluid mg1"></div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">Attabad Lake is a lake located in the Gojal region of Hunza Valley in Gilgit−Baltistan, Pakistan. It was created in January 2010 as the result of a major landslide in Attabad. </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+                <!-- Altit MODAL -->
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Altit Fort</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/altit1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/altit2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 ">
+                <img src="../images/Giglit/altit3.jpg" class="img-fluid mg1"></div>
+                <div class="col-sm-6 mt-2 ">
+                  <img src="../images/Giglit/altit4.jpg" class="img-fluid mg1"></div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">Altit Fort is an ancient fort at Altit town in the Hunza valley in Gilgit Baltistan, Pakistan. It was originally home to the hereditary rulers of the Hunza state who carried the title Mir, although they moved to the somewhat younger Baltit fort nearby three centuries later.</p>
+              </div>
+              <div class="modal-footer bg-dark">
+      
+                  <!-- CLOSE -->
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+         <!--Baltit MODAL -->
+         <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Baltit Fort</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/baltit3.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/baltit2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Giglit/baltit5.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  Baltit Fort is a fort in the Hunza valley, near the town of Karimabad, in the Gilgit-Baltistan region of northern Pakistan. Founded in the 8th century CE, it has been on the UNESCO World Heritage Tentative list since 2004.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+         <!--SATRANGI LAKE MODAL -->
+         <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Satrangi Lake</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/satrangi1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/satrangi2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Giglit/satrangi3.jpg" class="img-fluid mg1">
+                </div>
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                  <img src="../images/Giglit/satrangi4.jpg" class="img-fluid mg1">
+                  </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  There are three lakes in Naltar Valley known as Naltar Lakes or Bashkiri Lakes at altitudes ranging from 3,050–3,150 metres. In one of the three lakes colour of water is green while the second has blue colored water and the third has azure colored water.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!--PASSU GLACIER MODAL -->
+         <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Passu Glacier</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/passu1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/passu3.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Giglit/passu4.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  Passu Glacier is situated in the south side of Passu village. Passu Peak is situated in the back side of the glacier. This glacier is linked with Batura Glacier and many other glaciers of the region.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!--KHUNJERAB PASS MODAL -->
+         <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Khunjerab Pass</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/khunjerab1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/khunjerab2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Giglit/khunjerab3.jpg" class="img-fluid mg1">
+                </div>
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                  <img src="../images/Giglit/khunjerab4.jpg" class="img-fluid mg1">
+                  </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  Khunjerab Pass is a 4,693-meter-high mountain pass in the Karakoram Mountains, in a strategic position on the northern border of Pakistan and on the southwest border of China. Mutsjliga Pass is a 5,314-meter-high mountain pass at 36.97374°N 75.2973°E near Khunjerab Pass.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!--HUSSAINI BRIDGE MODAL -->
+         <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Hussaini Suspension Bridge</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/bridge1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/bridge2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Giglit/bridge3.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  Hussaini bridge is located in Hunza, Pakistan. It is stretched out to 1km, locals use it as a connection to the village which is located on the other side . It is dangerous because of the massive gaps between the planks. It is known as the most dangerous bridge in the world, the Hussaini Hanging Bridge is only one of many precarious rope bridges in Northern Pakistan.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!--BORITH LAKE MODAL -->
+         <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Borith Lake</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/borith1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/borith2.jfif" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Giglit/borith3.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  Borith Lake is a lake in Gojal, Hunza Valley in Gilgit–Baltistan, Pakistan. The altitude of Borith is roughly 2,600 metres above sea level. It lies approximately 2 km to the north of Gulmit, a saline body of water occupying a small hollow at an elevation of 2,500 meters.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!--BATUERA GLACIER MODAL -->
+         <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Batura Glacier</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/batura1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/batura2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Giglit/batura3.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  Batura Glacier, 57 km long, is one of the largest and longest glaciers outside of the polar regions. It lies in the upper Hunza region of Hunza District, Gilgit-Baltistan in Pakistan. It is just north of the massifs of Batura, at 7,795 metres, and Passu, at 7,500 metres. The glacier flows west to east.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!--RAKAPOSHI VIEW POINT MODAL -->
+         <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Rakaposhi View Point</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/rakaposhi2.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/rakaposhi3.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Giglit/rakaposhi4.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  Rakaposhi (Urdu: راکاپوشی / رَکی پُوشِہ‎) is a mountain in the Karakoram mountain range in the Gilgit-Baltistan territory of Pakistan. Its front side is situated in the Bagrote valley, Nagar valley and danyor, approximately 100 km (62 mi) north of the city of Gilgit.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!--LADY FINGER MODAL -->
+         <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Lady Finger Peak</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/ladyfinger1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/ladyfinger2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Giglit/ladyfinger3.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  The Bublimotin, Bubli Motin, Bublimating or Ladyfinger Peak, is a distinctive rock spire in the Batura Muztagh, the westernmost subrange of the Karakoram range in Pakistan. It lies on the southwest ridge of the Ultar Sar massif, the most southeasterly of the major groups of the Batura Muztagh.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!--HOPAR VALLEY MODAL -->
+         <div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Hopar Valley</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/hopar1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Giglit/hopar2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Giglit/hopar3.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                  The Hopar Valley is a scenic portion of the Nagar Valley in Gilgit-Baltistan, in Pakistan. It is about 10 km away from Nagar Khas, the principal city of the Nagar Valley. Hopar Valley is home of the Spantik and Hopar glaciers.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Location Modal 1-->
+ <div class="modal fade" id="mymodal1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51436.43611578657!2d74.81608270770731!3d36.31770800694455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e8a9dd2c71141f%3A0xa2be2ddae7aadd31!2sAttabad%20Lake!5e0!3m2!1sen!2s!4v1630877067231!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Location Modal 2 -->
+<div class="modal fade" id="mymodal2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1607.4319212082696!2d74.68108673075079!3d36.31560853603646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e8a0b2478f1125%3A0x25316547da011a9d!2sKhabasi%20Residence!5e0!3m2!1sen!2s!4v1630877372155!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 3-->
+<div class="modal fade" id="mymodal3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3214.4500634986807!2d74.66758731445567!3d36.32564068004904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e8a0c6d7ddc82d%3A0xff74f4d9088da390!2sBaltit%20Fort!5e0!3m2!1sen!2s!4v1630877443861!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 4-->
+<div class="modal fade" id="mymodal4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10824.132657415783!2d74.0757664185847!3d36.23867064441976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e8788c00294859%3A0xb19ceadfcaf509ea!2sNaltar%20Lakes!5e0!3m2!1sen!2s!4v1630877494270!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Location Modal 5 -->
+<div class="modal fade" id="mymodal5" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12833.849877630919!2d74.76573952205494!3d36.47054463028181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e8a55bd832f205%3A0x44b2081e17f913a4!2sPasu%20Glacier%2C%20Gojal%2C%20Hunza%20Nagar!5e0!3m2!1sen!2s!4v1630877737845!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 6-->
+<div class="modal fade" id="mymodal6" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62524.96971130847!2d75.42681680273365!3d36.85406382921962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ef1117cb5ebb99%3A0xb66b2613750d7ebf!2sKunjirap%20Daban!5e0!3m2!1sen!2s!4v1630877711185!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 7-->
+<div class="modal fade" id="mymodal7" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d802.6053948524984!2d74.88114032639119!3d36.42318748002791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e8ad4bb2ddc1c9%3A0xc84443857eb49c18!2sHussaini%20Suspension%20Bridge!5e0!3m2!1sen!2s!4v1630877542023!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Location Modal 8 -->
+<div class="modal fade" id="mymodal8" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6420.201845866411!2d74.85824347295126!3d36.4309422701049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e8aea2cbaf6ab7%3A0x39ee4dc1c4ed904!2sBorit%20Lake!5e0!3m2!1sen!2s!4v1630877773820!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 9-->
+<div class="modal fade" id="mymodal9" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25646.31277937044!2d74.70428392662508!3d36.53508218596717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e8ba5a22fb37db%3A0xa9c962f7ce6fbd68!2sBatura%20Glacier%2C%20Batura%20Track%2C%20Gojal%2C%20Hunza%20Nagar!5e0!3m2!1sen!2s!4v1630877849086!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 10-->
+<div class="modal fade" id="mymodal10" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3217.986608229195!2d74.48552701445236!3d36.239819280067856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e627261d5e3adb%3A0x154d22ed4b9880df!2sRakaposhi%20View%20Point!5e0!3m2!1sen!2s!4v1630877879654!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Location Modal 11-->
+<div class="modal fade" id="mymodal11" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25692.249332534037!2d74.65686394849105!3d36.39634212213445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e8a1703a2cb4a3%3A0x38b37b75a993d830!2sLady%20Finger!5e0!3m2!1sen!2s!4v1630877925465!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 12-->
+<div class="modal fade" id="mymodal12" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25748.712978024403!2d74.73664184806879!3d36.2251805745216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e61b61aaa85a13%3A0x777bdba108b08d9d!2sHopar%20Valley!5e0!3m2!1sen!2s!4v1630877948801!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- HOTELS MODAL BOX -->
+
+        <!-- Hardrock HOTEL -->
+  <div class="modal fade" id="modal01" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Hard Rock Resort & Villas</h4>
+              <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-body bg-dark">
+            <div class="row">
+              <div class="col-md-12 mt-2">
+              <img src="../images/Giglit/hardrock2.jpg" class="img-fluid mg3">
+            </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-sm-6 mt-2">
+            <img src="../images/Giglit/hardrockr.jpg"class="img-fluid mg1">
+            <h6 class="text-white text-center">Rooms</h6>
+          </div>
+            <div class="col-sm-6 mt-2">
+            <img src="../images/Giglit/hardrockd.jpg" class="img-fluid mg1">
+            <h6 class="text-white text-center">Dining</h6>
+            </div>
+          </div>
+            <div class="row">
+            <div class="col-sm-6 mt-1 d-grid mx-auto">
+              <img src="../images/Giglit/hardrockv.jpg" class="img-fluid mg1">
+            <h6 class="text-white text-center">View</h6>
+  
+            </div>
+          </div>
+  
+        </div>
+
+      <div class="modal-footer bg-dark">
+
+            <!-- CLOSE -->
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+            Close  
+           </button>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Luxus HOTEL -->
+
+  <div class="modal fade" id="modal02" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Luxus Hunza Hotel</h4>
+              <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="row">
+            <div class="col-md-12 mt-2">
+            <img src="../images/Giglit/luxus1.jpeg" class="img-fluid mg3">
+          </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-sm-6 mt-2">
+          <img src="../images/Giglit/luxusr.jpg"class="img-fluid mg1">
+          <h6 class="text-white text-center">Rooms</h6>
+        </div>
+          <div class="col-sm-6 mt-2">
+          <img src="../images/Giglit/luxusl.jpg" class="img-fluid mg1">
+          <h6 class="text-white text-center">Dining</h6>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-sm-6 mt-1">
+            <img src="../images/Giglit/luxusd.jpg" class="img-fluid mg1">
+          <h6 class="text-white text-center">Lobby</h6>
+        </div>
+          <div class="col-sm-6 mt-1">
+            <img src="../images/Giglit/luxusv.jpg" class="img-fluid mg1">
+          <h6 class="text-white text-center">View</h6>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer bg-dark">
+        <!-- CLOSE -->
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+            Close  
+           </button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!-- Tourist Cottage HOTEL -->
+  <div class="modal fade" id="modal03" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Tourist Cottage</h4>
+              <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="row">
+            <div class="col-md-12 mt-2">
+            <img src="../images/Giglit/cottage1.jpg" class="img-fluid mg3">
+          </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-sm-6 mt-2">
+          <img src="../images/Giglit/cottager.jpg"class="img-fluid mg1">
+          <h6 class="text-white text-center">Rooms</h6>
+        </div>
+            <div class="col-sm-6 mt-2">
+            <img src="../images/Giglit/cottagel.jpg" class="img-fluid mg1">
+          <h6 class="text-white text-center">Lobby</h6>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6 mt-1">
+            <img src="../images/Giglit/cottagev.jpg" class="img-fluid mg1">
+          <h6 class="text-white text-center">View</h6>
+          </div>
+          <div class="col-sm-6 mt-1">
+            <img src="../images/Giglit/cottaged.jpg" class="img-fluid mg1">
+          <h6 class="text-white text-center">Dining</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer bg-dark">
+
+            <!-- CLOSE -->
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+            Close  
+           </button>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Roomy Yurts HOTEL -->
+
+  <div class="modal fade" id="modal04" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Roomy Yurts</h4>
+              <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="row">
+            <div class="col-md-12 mt-2">
+            <img src="../images/Giglit/roomy1.jfif" class="img-fluid mg3">
+          </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-sm-6 mt-2">
+          <img src="../images/Giglit/roomyr.jpg"class="img-fluid mg1">
+          <h6 class="text-white text-center">Rooms</h6>
+        </div>
+            <div class="col-sm-6 mt-1 ">
+              <img src="../images/Giglit/roomyv.jpg" class="img-fluid mg1">
+            <h6 class="text-white text-center">View</h6>
+          </div> 
+        </div>
+
+      </div>
+
+      <div class="modal-footer bg-dark">
+        <!-- CLOSE -->
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+            Close  
+           </button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+   <!-- Eagles Nest HOTEL -->
+
+   <div class="modal fade" id="modal05" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Eagle's Nest Hotel</h4>
+              <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="row">
+            <div class="col-md-12 mt-2">
+            <img src="../images/Giglit/eagles.jpg" class="img-fluid mg3">
+          </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-sm-6 mt-2">
+          <img src="../images/Giglit/eaglesr.jpg"class="img-fluid mg1">
+          <h6 class="text-white text-center">Rooms</h6>
+        </div>
+          <div class="col-sm-6 mt-2">
+          <img src="../images/Giglit/eaglesd.jpg" class="img-fluid mg1">
+          <h6 class="text-white text-center">Dining</h6>
+          </div>
+        </div>
+          <div class="row">
+          <div class="col-sm-6 mt-1 d-grid mx-auto">
+            <img src="../images/Giglit/eaglesv.jpg" class="img-fluid mg1">
+          <h6 class="text-white text-center">View</h6>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer bg-dark">
+        <!-- CLOSE -->
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+            Close  
+           </button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+   <!--  Roomy Yurts HOTEL -->
+
+   <div class="modal fade" id="modal06" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Fairyland Hotel</h4>
+              <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="row">
+            <div class="col-md-12 mt-2">
+            <img src="../images/Giglit/fairyland1.jfif" class="img-fluid mg3">
+          </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-sm-6 mt-2">
+          <img src="../images/Giglit/fairylandr.jpg"class="img-fluid mg1">
+          <h6 class="text-white text-center">Rooms</h6>
+        </div>
+          <div class="col-sm-6 mt-2">
+          <img src="../images/Giglit/fairylandd.jpg" class="img-fluid mg1">
+          <h6 class="text-white text-center">Dining</h6>
+          </div>
+        </div>
+          <div class="row">
+          <div class="col-sm-6 mt-1 d-grid mx-auto">
+            <img src="../images/Giglit/fairylandv.jpg" class="img-fluid mg1">
+          <h6 class="text-white text-center">View</h6>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer bg-dark">
+        <!-- CLOSE -->
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+            Close  
+           </button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+</body>
+</html>
+
+
+<script>
+//  VIEW MORE
+$(document).ready(function(){
+$("#view").click(function(){
+$("#viewmore").fadeIn("slow")
+$("#view").hide();
+
+});
+});
+
+// VIEW MORE HOTELS
+$(document).ready(function(){
+          $("#view1").click(function(){
+            $("#viewmore1").fadeIn("slow")
+            $("#view1").hide();
+        
+          });
+
+  
+  });
+
+
+// DESTINATIONS
+function attabad() {
+$('#modal1').modal('show');
+};   
+function altit() {
+$('#modal2').modal('show');
+};
+function baltit() {
+$('#modal3').modal('show');
+};
+function satrangi() {
+$('#modal4').modal('show');
+};
+function passu() {
+$('#modal5').modal('show');
+};
+function khunjerab() {
+$('#modal6').modal('show');
+};   
+function hussaini() {
+$('#modal7').modal('show');
+};
+function borith() {
+$('#modal8').modal('show');
+};
+function batura() {
+$('#modal9').modal('show');
+};
+function rakaposhi() {
+$('#modal10').modal('show');
+};
+function ladyfinger() {
+$('#modal11').modal('show');
+};
+function hopar() {
+$('#modal12').modal('show');
+};
+
+
+// HOTELS
+
+function hardrock() {
+          $('#modal01').modal('show');
+};   
+function luxus() {
+          $('#modal02').modal('show');
+};
+function  cottage() {
+          $('#modal03').modal('show');
+      };
+function roomy() {
+          $('#modal04').modal('show');
+      }; 
+      
+function eagle() {
+          $('#modal05').modal('show');
+      }; 
+
+function fairyland() {
+          $('#modal06').modal('show');
+      }; 
+
+</script>

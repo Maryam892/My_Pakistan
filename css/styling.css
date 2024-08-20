@@ -1,0 +1,289 @@
+.pages-banner {
+    width: 100%;
+    background: url('../images/Slider/pexels-krivec-ales-580151.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 100px;
+
+}
+
+.cover{
+    height: 620px;
+    /* object-fit: cover; */
+    width: 100%
+}
+
+/* CITIES OF SINDH */
+.box:hover {
+    box-shadow: 0 9px 10px 0 rgb(32 33 36 / 60%);
+    border-radius: 5px;
+    border: 2px solid rgb(199, 212, 202);
+}
+
+.box {
+    cursor: pointer;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* HEADINGS */
+h2,
+h1,
+h5,
+h4,
+h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* IMAGES OF SINDH */
+.img1 {
+    height: 200px;
+    width: 100%;
+}
+
+/* MODAL BOX IMAGES */
+.mg2,
+.mg1 {
+
+    display: inline;
+    height: 150px;
+    width: 230px;
+
+}
+
+.mg3 {
+    height: 200px;
+    width: 100%;
+
+}
+
+#viewmore,
+#viewmore1 {
+    display: none;
+}
+
+.body {
+
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: wheat;
+}
+
+.book {
+    position: relative;
+    height: 500px;
+    width: 300px;
+
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    perspective: 1500px;
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.front,
+.back {
+    background-color: teal;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    transform-origin: left;
+    transition: transform 0.5s;
+
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: hotpink;
+}
+
+.back {
+    z-index: 0;
+}
+
+
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+
+.back-content {
+    transform: rotateY(180deg);
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+
+
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: azure;
+}
+
+/* i{
+  font-size: 40px;
+  color: gray;
+} */
+
+#p1 {
+    z-index: 4;
+}
+
+#p2 {
+    z-index: 3;
+}
+
+#p3 {
+    z-index: 2;
+}
+
+#p4 {
+    z-index: 1;
+}
+
+
+.flipped .front,
+.flipped .back {
+
+    transform: rotateY(-180deg);
+}
+
+.footer-clean {
+    padding: 50px 0;
+    background-image: url(../images/Slider/pexels-tobi-463734.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: #ffffff;
+
+}
+
+.footer-clean h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-clean ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-clean ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+    opacity: 1;
+    border-bottom: 2px solid white;
+}
+
+.footer-clean .item.social {
+    text-align: center;
+}
+
+@media (max-width:767px) {
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-clean .item.social {
+        text-align: center;
+    }
+}
+
+.footer-clean .item.social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-clean .item.social > a:hover {
+    opacity: 0.9;
+}
+
+@media (max-width:991px) {
+    .footer-clean .item.social > a {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer-clean .item.social > a {
+        margin-top: 10px;
+    }
+}
+
+.footer-clean .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+
+
+
+h3, h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+

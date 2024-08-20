@@ -1,0 +1,1239 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swat | My Pakistan My Heaven</title>
+                <!-- STYLING -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/styling.css">
+      <!-- BOOTSTRAP, POPPER AND JQUERY -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/styling.js"></script>
+        <!-- Animation -->
+    <link rel="stylesheet" href="../css/animation.css">
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../icons/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="container-fluid p-0 fixed-top">
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg px-3 py-2 navbar-light" id="navbar">
+        <!-- LOGO -->
+        <a class="navbar-brand p-0" href="../index.html">
+          <!--               My Pakistan My Heaven-->
+          <img class="p-0" src="../images/logo.png" height="75">
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- HOME -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-auto">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../htmlpages/about.html">About</a>
+                </li>
+                <!-- DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Sindh.html">Sindh</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Punjab.html">Punjab</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Balochistan.html">Balochistan</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Kpk.html">Kpk</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Gilgit.html">Gilgit</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tourist Guide
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Karachi.html">Karachi</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Lahore.html">Lahore</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Isd.html">Islamabad</a></li>
+                    </ul>
+                </li>
+                <!-- OTHER ITEMS -->
+                <li class="nav-item">
+                  <a class="nav-link" href="../htmlpages/Feedback.html">Feedback</a>
+              </li>
+                <li class="header-btn mt-1">
+                    <a class="nav-link btn btn-dark p-1 px-4" href="../htmlpages/map.html">Map</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+    <!-- NAVBAR END  -->
+
+           <!-- COVER PIC -->
+  <div>
+    <img src="../images/Kpk/swat3.jpg">
+</div>
+
+      <!-- DESTINATIONS -->
+<div class="container-fluid mt-5">
+<h1 class="text-center text-dark"><b>Destinations</b></h1>
+      <!-- 1ST ROW -->
+    <!-- Des 1 -->
+<div class="row ">
+<div class="col-md-3 des">
+  <div class="card" onclick="jabba()" id="minar" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Kpk/malamjabba4.jpeg" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal1"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Malam Jabba</h5>
+    </div>
+    </div>
+    </div> 
+</div>
+      <!-- Des 2 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="kumrat()" id="mosque" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Kpk/kumrat4.jpg" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal2"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Kumrat Valley</h5>
+    </div>
+    </div>
+    </div> 
+</div>
+      <!-- Des 3 -->
+<div class="col-md-3 des">
+<div class="card" onclick="kalam()" id="have" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Kpk/malamjabba.jpeg" alt="Card image"></div>
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-2">
+      <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal3"></i>
+    </div>
+    <div class="col-md-10 ">
+  <h5 class="card-title text-center">Kalam Valley</h5>
+</div>
+</div>
+</div> 
+</div>
+
+      <!-- Des 4 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="bahrain()" id="garden" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Kpk/bahrain5.jpg" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal4"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Bahrain</h5>
+    </div>
+    </div>
+    </div> 
+</div>
+
+</div>
+<div class="d-grid col-md-2 mx-auto">
+<button class="btn btn-dark text-white text-center" id="view">View More</button>
+</div>
+
+<!-- 2nd row DESTINATIONS -->
+<div id="viewmore">
+<div class="row mt-2 ">
+    <!-- Des 5 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="marghuzar()" id="town" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Kpk/marghuzar.jpg" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal5"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Marghuzar</h5>
+    </div>
+    </div>
+    </div> 
+</div>
+
+<!-- Des 6 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="madyan()" id="mahal" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Kpk/madyan1.jpg" alt="Card image"></div>
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-2">
+      <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal6"></i>
+    </div>
+    <div class="col-md-10 ">
+  <h5 class="card-title text-center">Madyan</h5>
+</div>
+</div>
+</div> 
+  </div>
+
+<!-- Des 7 -->
+<div class="col-md-3 des">
+<div class="card" onclick="mahodand()" id="l1" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Kpk/mahodand.jfif" alt="Card image"></div>
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-2">
+      <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal7"></i>
+    </div>
+    <div class="col-md-10 ">
+  <h5 class="card-title text-center">Mahodand Lake</h5>
+</div>
+</div>
+</div> 
+</div>
+
+<!-- Des 8 -->
+<div class="col-md-3 des">
+<div class="card" onclick="katora()" id="p1" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Kpk/katora.jfif" alt="Card image"></div>
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-2">
+      <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal8"></i>
+    </div>
+    <div class="col-md-10 ">
+  <h5 class="card-title text-center">Katora Lake</h5>
+</div>
+</div>
+</div> 
+</div>
+
+
+</div>
+
+ <!-- Row 3 Destinations -->
+ <div class="row mt-2 justify-content-center ">
+    <!-- Des 9 -->
+  <div class="col-md-3 des">
+  <div class="card" onclick="kundol()" id="town" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Kpk/kundol1.jpg" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal9"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Kundol Lake</h5>
+    </div>
+    </div>
+    </div> 
+  </div>
+  
+</div>
+</div>
+</div>
+ <!-- HOTELS -->
+ <div class="container-fluid mt-5">
+  <h1 class="text-center text-dark"><b>Hotels</b></h1>
+            <!-- 1st row HOTELS-->
+  <div class="row ">
+  
+  
+        <!-- 1st hotel -->
+  <div class="col-md-3 des">
+    <div class="card" onclick="gs()" id="" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Kpk/gs2.jpg" alt="Card image">
+      <div class="card-body">
+      <h5 class="card-title text-center">Golden Star</h5>
+    </div>
+    </div> 
+    </div>
+  
+  
+  <!-- 2nd hotel -->
+  <div class="col-md-3 des">
+  <div class="card" onclick="serena()" id="" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Kpk/serena2.jpg" alt="Card image">
+    <div class="card-body">
+    <h5 class="card-title text-center">Serena</h5>
+  </div>
+  </div> 
+  </div>
+  
+  <!-- 3rd hotel -->
+  <div class="col-md-3 des">
+  <div class="card" onclick="pc()" id="" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Kpk/pcm.jpeg" alt="Card image">
+    <div class="card-body">
+    <h5 class="card-title text-center">PC (Pearl Continental)</h5>
+  </div>
+  </div> 
+  </div>
+  
+  <!-- 4th hotel -->
+  <div class="col-md-3 des">
+    <div class="card" onclick="view()" id="" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Kpk/swatview1.jpg" alt="Card image">
+      <div class="card-body">
+      <h5 class="card-title text-center">Swat View Hotel</h5>
+    </div>
+    </div> 
+    </div>
+  
+  </div>
+
+
+
+  <div class="d-grid col-md-2 mx-auto">
+    <button class="btn btn-dark text-white text-center" id="view1">View More</button>
+    </div>
+  
+    <!-- 2nd row HOTELS -->
+
+<div id="viewmore1">
+  <div class="row mt-2 justify-content-center">
+  
+  <!-- 5th hotel -->
+  <div class="col-md-3 des">
+    <div class="card" onclick="walnut()" id="nishat" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Kpk/wh2.jpg" alt="Card image">
+      <div class="card-body">
+      <h5 class="card-title text-center">Walnut Heights</h5>
+    </div>
+    </div> 
+    </div>  
+  
+  <!-- 6th hotel -->
+  <div class="col-md-3 des">
+  <div class="card" onclick="shelton()" id="" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Kpk/sr.jfif" alt="Card image">
+    <div class="card-body">
+    <h5 class="card-title text-center">Shelton Rezidor</h5>
+  </div>
+  </div> 
+  </div>
+
+
+  </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <div class="footer-clean mt-5">
+    <footer>
+        <div class="container">
+          <div class="row">
+              <div class="col-md-5">
+              <div class="row ">
+            <h3 class="col-12 p-0 text-center">Cities Of Pakistan</h3>
+            <div class="col-md-3 mt-2 item">
+              <ul>
+                <li><a href="../htmlpages/Karachi.html">Karachi</a></li>
+                <li><a href="../htmlpages/Hyd.html">Hyderabad</a></li>
+                <li><a href="../htmlpages/Sukkur.html">Sukkur</a></li>
+                <li><a href="../htmlpages/Lahore.html">Lahore</a></li>
+                <li><a href="../htmlpages/Isd.html">Islamabad</a></li>
+                <li><a href="../htmlpages/Faisalabad.html">Faisalabad</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 mt-2 item">
+              <ul>
+                <li><a href="../htmlpages/Bahawalpur.html">Bahawalpur</a></li>
+                <li><a href="../htmlpages/Multan.html">Multan</a></li>
+                <li><a href="../htmlpages/Quetta.html">Quetta</a></li>
+                <li><a href="../htmlpages/Gawadar.html">Gawadar</a></li>
+                <li><a href="../htmlpages/Peshawer.html">Peshawer</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 mt-2 item">
+              <ul>
+                <li><a href="../htmlpages/Abbottabad.html">Abbottabad</a></li>
+                <li><a href="../htmlpages/Swat.html">Swat</a></li>
+                <li><a href="../htmlpages/Gilgitc.html">Gilgit</a></li>
+                <li><a href="../htmlpages/Hunza.html">Hunza</a></li>
+                <li><a href="../htmlpages/Skardu.html">Skardu</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+                <div class="col-md-5 item">        
+                <h3>Quick Links</h3>
+                <ul class="mt-3">
+                    <li><a href="../htmlpages/about.html">About Us</a></li>
+                    <li><a href="../htmlpages/map.html">Map of Pakistan</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-7 pt-5">
+              <h4 class="text-center">"It is better to see something ones than to hear about it thousand times."</h4>
+              <h5 class="text-center">~Anonymous</h5>
+            </div>
+            </div>
+            </div>
+    </div>
+          <div class="row mt-3">
+            <div class="col item social">
+                <p class="copyright">My Pakistan My Heaven © 2021</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+</div>
+<!-- Footer Ends -->
+
+  <!-- HOTELS MODAL BOX -->
+
+        <!-- Golden Star HOTEL -->
+        <div class="modal fade" id="modal01" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Golden Star Hotel</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                  <div class="row">
+                    <div class="col-md-12 mt-2">
+                    <img src="../images/Kpk/gs1.jpg" class="img-fluid mg3">
+                  </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-sm-6 mt-2">
+                  <img src="../images/Kpk/gsr.jpg"class="img-fluid mg1">
+                  <h6 class="text-white text-center">Rooms</h6>
+                </div>
+                  <div class="col-sm-6 mt-2">
+                  <img src="../images/Kpk/gsd.jpg" class="img-fluid mg1">
+                  <h6 class="text-white text-center">Dining</h6>
+                  </div>
+                </div>
+                  <div class="row">
+                    <div class="col-sm-6 mt-1">
+                    <img src="../images/Kpk/gsl.jpg" class="img-fluid mg1">
+                  <h6 class="text-white text-center">Lobby</h6>
+                </div>
+                <div class="col-sm-6 mt-1">
+                  <img src="../images/Kpk/gsv.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">View</h6>
+              </div>
+            
+                </div>
+        
+              </div>
+      
+            <div class="modal-footer bg-dark">
+      
+                  <!-- CLOSE -->
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close  
+                 </button>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+      
+        <!--  Serena Hotel -->
+      
+        <div class="modal fade" id="modal02" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Serena Hotel</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-md-12 mt-2">
+                  <img src="../images/Kpk/serena2.jpg" class="img-fluid mg3">
+                </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-sm-6 mt-2">
+                <img src="../images/Kpk/serenar.jpg"class="img-fluid mg1">
+                <h6 class="text-white text-center">Rooms</h6>
+              </div>
+                <div class="col-sm-6 mt-2">
+                <img src="../images/Kpk/serenad.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Dining</h6>
+                </div>
+              </div>
+                <div class="row">
+                  <div class="col-sm-6 mt-1 ">
+                  <img src="../images/Kpk/serenal.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Lobby</h6>
+              </div>
+              <div class="col-sm-6 mt-1 ">
+                <img src="../images/Kpk/serenap.jfif" class="img-fluid mg1">
+              <h6 class="text-white text-center">Pool Area</h6>
+            </div>
+              </div>
+      
+            </div>
+      
+            <div class="modal-footer bg-dark">
+              <!-- CLOSE -->
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close  
+                 </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      
+      <!-- PC HOTEL -->
+        <div class="modal fade" id="modal03" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">PC (Pearl Continental)</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-md-12 mt-2">
+                  <img src="../images/Kpk/pcm1.jpg" class="img-fluid mg3">
+                </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-sm-6 mt-2">
+                <img src="../images/Kpk/pcmr.jpg"class="img-fluid mg1">
+                <h6 class="text-white text-center">Rooms</h6>
+              </div>
+                  <div class="col-sm-6 mt-2">
+                  <img src="../images/Kpk/pcmd.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Dining</h6>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 mt-1 d-grid mx-auto">
+                  <img src="../images/Kpk/pcml.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center"> Lobby</h6>
+                </div>
+              </div>
+            </div>
+      
+            <div class="modal-footer bg-dark">
+      
+                  <!-- CLOSE -->
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close  
+                 </button>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+      
+        <!-- Swat View Hotel -->
+      
+        <div class="modal fade" id="modal04" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;"> Swat View Hotel</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-md-12 mt-2">
+                  <img src="../images/Kpk/swatview2.jpeg" class="img-fluid mg3">
+                </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-sm-6 mt-2">
+                <img src="../images/Kpk/swatviewr.jpg"class="img-fluid mg1">
+                <h6 class="text-white text-center">Rooms</h6>
+              </div>
+                <div class="col-sm-6 mt-2">
+                <img src="../images/Kpk/swatviewd.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Dining</h6>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+              <img src="../images/Kpk/swatviewv.jpg"class="img-fluid mg1">
+              <h6 class="text-white text-center">View</h6>
+            </div>
+      </div>
+            </div>
+      
+            <div class="modal-footer bg-dark">
+              <!-- CLOSE -->
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close  
+                 </button>
+            </div>
+          </div>
+        </div>
+        </div>
+          <!--Walnut Height   -->
+      
+          <div class="modal fade" id="modal05" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-dark">
+                  <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Walnut Heights Hotel</h4>
+                      <span aria-hidden="true">&times;</span>
+                </div>
+                <div class="modal-body bg-dark">
+                  <div class="row">
+                    <div class="col-md-12 mt-2">
+                    <img src="../images/Kpk/wh.jfif" class="img-fluid mg3">
+                  </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-sm-6 mt-2">
+                  <img src="../images/Kpk/whr.jpg"class="img-fluid mg1">
+                  <h6 class="text-white text-center">Rooms</h6>
+                </div>
+                  <div class="col-sm-6 mt-2">
+                  <img src="../images/Kpk/whl.jfif" class="img-fluid mg1">
+                  <h6 class="text-white text-center">Lobby</h6>
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-sm-6 mt-2 ">
+                <img src="../images/Kpk/whv.jpeg"class="img-fluid mg1">
+                <h6 class="text-white text-center">View</h6>
+              </div>
+              <div class="col-sm-6 mt-2 ">
+                <img src="../images/Kpk/whd.jpg"class="img-fluid mg1">
+                <h6 class="text-white text-center">Dining</h6>
+              </div>
+        </div>
+        
+              </div>
+        
+              <div class="modal-footer bg-dark">
+                <!-- CLOSE -->
+
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                    Close  
+                   </button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+            <!-- Shelton Rezidor  -->
+      
+        <div class="modal fade" id="modal06" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Shelton Rezidor  Hotel</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-md-12 mt-2">
+                  <img src="../images/Kpk/sr1.jfif" class="img-fluid mg3">
+                </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-sm-6 mt-2">
+                <img src="../images/Kpk/srr.jpg"class="img-fluid mg1">
+                <h6 class="text-white text-center">Rooms</h6>
+              </div>
+                <div class="col-sm-6 mt-2">
+                <img src="../images/Kpk/srl.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Lobby</h6>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+              <img src="../images/Kpk/srd.jpg"class="img-fluid mg1">
+              <h6 class="text-white text-center">Dining</h6>
+            </div>
+      </div>
+      
+            </div>
+      
+            <div class="modal-footer bg-dark">
+              <!-- CLOSE -->
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close  
+                 </button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        
+   <!--Location Modal 1-->
+ <div class="modal fade" id="mymodal1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6552.4216078509435!2d72.56718822270508!3d34.80063797163549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc2e328bd74f97%3A0x6b532bbbdf933288!2sMalam%20Jabba%2C%20Swat%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1631092622467!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Location Modal 2 -->
+<div class="modal fade" id="mymodal2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103870.5128336911!2d72.13841611827922!3d35.554849947583335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc96ebbf020b23%3A0x4dd0689f30acc45f!2sKumrat%20Valley%2C%20Swat%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1631092675800!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 3-->
+<div class="modal fade" id="mymodal3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103977.9123051814!2d72.51943736501215!3d35.47187906773757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dce4e4edd056a9%3A0x179ebb1f00409800!2sKalam%2C%20Swat%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1631092660070!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 4-->
+<div class="modal fade" id="mymodal4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13039.758445958658!2d72.538665621287!3d35.207973134914745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc50f5df910ccb%3A0xa510eacc20338d5!2sBahrain%2C%20Swat%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1631092700466!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 5-->
+<div class="modal fade" id="mymodal5" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.475676920044!2d72.34109226439331!3d34.667942280442944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc21c52c7c3e21%3A0xac6d176664b3dca0!2sMarghuzar%2C%20Swat%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1631092802917!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Location Modal 6-->
+<div class="modal fade" id="mymodal6" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26101.289069066475!2d72.5174867954319!3d35.140129040710256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc4fee557c2f6f%3A0xb84ea84da8734c5b!2sMadyan%2C%20Swat%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1631092854028!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Location Modal 7-->
+<div class="modal fade" id="mymodal7" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12958.795991842824!2d72.64515407158902!3d35.70902408300229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dcde49438c5ae1%3A0x44c292e0e612327f!2sMahodand%20Lake!5e0!3m2!1sen!2s!4v1631092878224!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Location Modal 8-->
+<div class="modal fade" id="mymodal8" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13014.032319334377!2d72.3368068713829!3d35.367852584294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dcf4bafe97537d%3A0x81daf6749a6efbc0!2sKatora%20Lake!5e0!3m2!1sen!2s!4v1631092899221!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Location Modal 9-->
+<div class="modal fade" id="mymodal9" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26010.717255203577!2d72.41476834610933!3d35.42161518633606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dcf1640c557ce1%3A0x8b388036295ddcc0!2sKundol%20Lake!5e0!3m2!1sen!2s!4v1631092988291!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+   <!-- DESTINATIONS MODAL BOX -->
+              
+              <!-- Malam Jabba MODAL -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Malam Jabba</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/malamjabba3.jpeg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/malamjabba1.jpeg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Kpk/malamjabba2.jpeg" class="img-fluid mg1"></div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">Malam Jabba (also Maalam Jabba, Urdu: مالم جبہ) is a Hill Station and ski resort in the Hindu Kush mountain range nearly 40 km from Saidu Sharif in Swat Valley, Khyber Pakhtunkhwa Province of Pakistan. It is 314 km from Islamabad and 51 km from Saidu Sharif Airport.</p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+                <!-- Kumrat Valley MODAL -->
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Kumrat Valley</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/kumrat.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/kumrat1.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2">
+                <img src="../images/Kpk/kumrat2.jpg" class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-2">
+                <img src="../images/Kpk/kumrat3.jpg" class="img-fluid mg1">
+                </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                    Kumrat is a valley in the Upper Dir District of Khyber Pakhtunkhwa the Province of Pakistan. Kumrat Valley is located about 2 hours away from the town of Thal. It is one of the valleys of Khyber Pakhtunkhwa.
+              <div class="modal-footer bg-dark">
+                  <!-- CLOSE -->
+
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+              <!--Kalam Valley  MODAL -->
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Kalam Valley</h4>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/kalam.jpg" class="img-fluid mg1"></div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/kalam1.jpg" class="img-fluid mg1"></div>
+              </div>
+              <div class="row">
+              <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Kpk/kalam2.jfif" class="img-fluid mg1">
+              </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                    Kalam is a valley located at distance of 99 kilometres from Mingora in the northern upper reaches of Swat valley along the bank of Swat River in Khyber Pakhtunkhwa province of Pakistan. The area has become a popular tourist attraction, known for its mountains, forests and lakes.</p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+        <!-- Bahrain MODAL-->
+        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Bahrain</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/bahrain1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/bahrain3.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2">
+                <img src="../images/Kpk/bahrain4.jpg" class="img-fluid mg1">
+                </div>
+                <div class="col-sm-6 mt-2 ">
+                <img src="../images/Kpk/bahrain.jfif" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">Bahrain is a town located in Swat District of Khyber Pakhtunkhwa, Pakistan, 60 km North of Mingora at an elevation of 4700 ft on the right bank of the Swat river. It is named Bahrain due to its location at the confluence of the Daral and Swat rivers.</p>
+              </div>
+              
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marghuzar MODAL-->
+        <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Marghuzar</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/marghuzar.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/marghuzar1.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Kpk/marghuzar2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">Marghuzar, or Marghazar is a hill station located in the Swat District of the Khyber Pakhtunkhwa province of Pakistan, and is 13 kilometers away from Saidu Sharif. Marghuzar, translated as "green land", contains green valleys, cold springs, and mountains, including the Elum Ghar mountain. </p>
+              </div>
+              
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Madyan MODAL-->
+        <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Madyan</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/madyan1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/madyan.jfif" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Kpk/madyan3.jfif" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">Madyan is a popular hill station, located at a distance of about 55 kilometres from Mingora, in the Swat District of Khyber Pakhtunkhwa the Province of Pakistan.</p>
+              </div>
+              
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mahodand Lake MODAL-->
+        <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Mahodand Lake </h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/mahodand1.jfif"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/mahodand3.jfif" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Kpk/maho2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">Mahodand Lake is a lake located in the upper Usho Valley at a distance of about 35 kilometres from Kalam in Swat District of Khyber Pakhtunkhwa province of Pakistan. The lake is accessible by a four-wheel drive vehicle, and is often utilized for fishing and boating.</p>
+              </div>
+              
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Katora Lake MODAL-->
+        <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Katora Lake</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/katora1.jfif"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/katora2.jfif" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Kpk/katora3.jfif" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">Katora Lake is an alpine glacial lake located in the upper reaches of Jahaz Banda, Kumrat valley in Upper Dir District of Khyber Pakhtunkhwa the Province of Pakistan. The lake is fed by the surrounding melting glacier waters. The word Katora means "bowl" in Pashto.</p>
+              </div>
+              
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kundol Lake MODAL-->
+        <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Kundol Lake </h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/kundol2.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Kpk/kundol3.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Kpk/kundol.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">Kundol Lake also known as Kundol Dand, is a lake in Swat Valley, Khyber Pakhtunkhwa, Pakistan, which is located in the north of Utror valley at a distance of 20.8 kilometres away from Kalam.</p>
+              </div>
+              
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+</body>
+</html>
+<script>
+
+    // DESTINATIONS
+function jabba() {
+    $('#modal1').modal('show');
+};   
+function kumrat() {
+    $('#modal2').modal('show');
+};
+function kalam() {
+    $('#modal3').modal('show');
+};
+function bahrain() {
+    $('#modal4').modal('show');
+};
+function marghuzar() {
+    $('#modal5').modal('show');
+};   
+function madyan() {
+    $('#modal6').modal('show');
+};
+function mahodand() {
+    $('#modal7').modal('show');
+};
+function katora() {
+    $('#modal8').modal('show');
+};  
+function kundol() {
+    $('#modal9').modal('show');
+};     
+
+// HOTELS
+
+function gs() {
+            $('#modal01').modal('show');
+  };   
+  function serena() {
+            $('#modal02').modal('show');
+  };
+  function pc() {
+            $('#modal03').modal('show');
+        };
+  function view() {
+            $('#modal04').modal('show');
+        }; 
+        function walnut() {
+            $('#modal05').modal('show');
+        };
+  function shelton() {
+            $('#modal06').modal('show');
+        }; 
+                        //  VIEW MORE
+                $(document).ready(function(){
+          $("#view").click(function(){
+            $("#viewmore").fadeIn("slow")
+            $("#view").hide();
+            
+          });
+  });
+        // VIEW MORE HOTELS
+         $(document).ready(function(){
+          $("#view1").click(function(){
+            $("#viewmore1").fadeIn("slow")
+            $("#view1").hide();
+        
+          });
+
+  
+  });    
+        </script>

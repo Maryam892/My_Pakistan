@@ -1,0 +1,1130 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gawadar | My Pakistan My Heaven</title>
+                <!-- STYLING -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/styling.css">
+      <!-- BOOTSTRAP, POPPER AND JQUERY -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/styling.js"></script>
+        <!-- Animation -->
+    <link rel="stylesheet" href="../css/animation.css">
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../icons/bootstrap-icons.css">
+</head>
+<body>
+   <!-- Navbar -->
+   <div class="container-fluid p-0 fixed-top">
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg px-3 py-2 navbar-light" id="navbar">
+        <!-- LOGO -->
+        <a class="navbar-brand p-0" href="../index.html">
+            <!--               My Pakistan My Heaven-->
+            <img class="p-0" src="../images/logo.png" height="75">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- HOME -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-auto">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../htmlpages/about.html">About</a>
+                </li>
+                <!-- DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Sindh.html">Sindh</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Punjab.html">Punjab</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Balochistan.html">Balochistan</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Kpk.html">Kpk</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Gilgit.html">Gilgit</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tourist Guide
+                    </a>
+                    <ul class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Karachi.html">Karachi</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Lahore.html">Lahore</a></li>
+                        <li><a class="dropdown-item text-dark text-center" href="../htmlpages/Isd.html">Islamabad</a></li>
+                    </ul>
+                </li>
+                <!-- OTHER ITEMS -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../htmlpages/Feedback.html">Feedback</a>
+                </li>
+                <li class="header-btn mt-1">
+                    <a class="nav-link btn btn-dark p-1 px-4" href="../htmlpages/map.html">Map</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+    <!-- NAVBAR END  -->
+
+      <!-- COVER PIC -->
+  <div>
+        <img src="../images/Balochistan/baloch1.jpg" class="img-fluid cover" style="width: 100%;">
+</div>
+  
+      <!-- DESTINATIONS -->
+<div class="container-fluid mt-5">
+<h1 class="text-center text-dark"><b>Destinations</b></h1>
+      <!-- 1ST ROW -->
+    <!-- Des 1 -->
+<div class="row ">
+<div class="col-md-3 des">
+  <div class="card" onclick="port()" id="quaid" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Balochistan/port2.jpeg" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal1"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Gawadar Port</h5>
+    </div>
+    </div>
+</div> 
+</div>
+      <!-- Des 2 -->
+      <div class="col-md-3 des ">
+        <div class="card" onclick="princess()" id="m1" style="border: none;">
+            <img class="card-img-top img-fluid img1" src="../images/Balochistan/tph1.jfif" alt="Card image"></div>
+            <div class="card-body">
+              <div class="row">
+              <div class="col-md-2">
+                <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal2"></i>
+              </div>
+              <div class="col-md-10 ">
+            <h5 class="card-title text-center">The Princess of Hope</h5>
+          </div>
+          </div>
+      </div> 
+      </div>
+
+      <!-- Des 3 -->
+<div class="col-md-3 des">
+<div class="card" onclick="astola()" id="d1" style="border: none;">
+  <img class="card-img-top img-fluid img1" src="../images/Balochistan/astola4.jpg" alt="Card image"></div>
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-2">
+      <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal3"></i>
+    </div>
+    <div class="col-md-10 ">
+  <h5 class="card-title text-center">Astola Island</h5>
+</div>
+</div>
+</div> 
+</div>
+
+      <!-- Des 4 -->
+<div class="col-md-3 des">
+  <div class="card" onclick="park()" id="pg1" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Balochistan/hingol.jpeg" alt="Card image"></div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal4"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Hingol National park</h5>
+    </div>
+    </div>
+</div> 
+</div>
+</div>
+
+
+
+<div class="d-grid col-md-2 mx-auto">
+    <button class="btn btn-dark text-white text-center" id="view">View More</button>
+    </div>
+    
+    <!-- 2nd row DESTINATIONS -->
+    <div id="viewmore">
+    <div class="row mt-2 justify-content-center">
+        <!-- Des 5 -->
+    <div class="col-md-3 des">
+      <div class="card" onclick="beach()" id="town" style="border: none;">
+          <img class="card-img-top img-fluid img1" src="../images/Balochistan/ormara1.jpg" alt="Card image">
+          </div>
+          <div class="card-body">
+            <div class="row">
+            <div class="col-md-2">
+              <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal5"></i>
+            </div>
+            <div class="col-md-10 ">
+          <h5 class="card-title text-center">Ormara Beach</h5>
+        </div>
+        </div>
+    </div> 
+    </div>
+    
+    
+    <!-- Des 6 -->
+    <div class="col-md-3 des">
+      <div class="card" onclick="hammer()" id="mahal" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Balochistan/hammer.jpg" alt="Card image">
+      </div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal6"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Hammerhead</h5>
+    </div>
+    </div>
+</div> 
+</div>
+
+    
+    <!-- Des 7 -->
+    <div class="col-md-3 des">
+    <div class="card" onclick="baba()" id="l1" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Balochistan/baba2.jpg" alt="Card image">
+      </div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal7"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Baba Chandragup</h5>
+    </div>
+    </div>
+</div> 
+</div>
+
+
+    
+        <!-- Des 8 -->
+    <div class="col-md-3 des">
+    <div class="card" onclick="desert()" id="l1" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Balochistan/desert3.jpg" alt="Card image">
+      </div>
+      <div class="card-body">
+        <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal8"></i>
+        </div>
+        <div class="col-md-10 ">
+      <h5 class="card-title text-center">Desert</h5>
+    </div>
+    </div>
+</div> 
+</div>
+</div>
+
+    
+       <!-- Row 3 Destinations -->
+<div class="row mt-2 justify-content-center">
+  <!-- Des 9 -->
+<div class="col-md-3 des">
+<div class="card" onclick="sphinx()" id="town" style="border: none;">
+    <img class="card-img-top img-fluid img1" src="../images/Balochistan/sphinx1.jpg" alt="Card image">
+    </div>
+    <div class="card-body">
+      <div class="row">
+      <div class="col-md-2">
+        <i class="fas fa-map-marker-alt image-overlay" data-bs-toggle="modal" data-bs-target="#mymodal9"></i>
+      </div>
+      <div class="col-md-10 ">
+    <h5 class="card-title text-center">The sphinx</h5>
+  </div>
+  </div>
+</div> 
+</div>
+</div>
+</div>
+</div>
+
+
+ <!-- HOTELS -->
+ <div class="container-fluid mt-5">
+    <h1 class="text-center text-dark"><b>Hotels</b></h1>
+              <!-- 1st row HOTELS-->
+    <div class="row justify-content-center">
+    
+    <!-- 1st hotel -->
+    <div class="col-md-3 des">
+    <div class="card" onclick="pc()" id="" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Balochistan/pc.jpg" alt="Card image">
+      <div class="card-body">
+      <h5 class="card-title text-center">Zaver PC (Pearl Continental)</h5>
+    </div>
+    </div> 
+    </div>
+    
+    <!-- 2nd hotel -->
+    <div class="col-md-3 des">
+    <div class="card" onclick="sadaf()" id="" style="border: none;">
+      <img class="card-img-top img-fluid img1" src="../images/Balochistan/sadafresort1.jpg" alt="Card image">
+      <div class="card-body">
+      <h5 class="card-title text-center">Sadaf Resort</h5>
+    </div>
+    </div> 
+    </div>
+    
+    <!-- 3rd hotel -->
+    
+    <div class="col-md-3 des">
+      <div class="card" onclick="royal()" id="" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Balochistan/royal1.jpg" alt="Card image">
+        <div class="card-body">
+        <h5 class="card-title text-center">Royal Resort</h5>
+      </div>
+      </div> 
+      </div>
+    
+
+
+        <!-- 4th hotel -->
+    <div class="col-md-3 des">
+      <div class="card" onclick="motel()" id="" style="border: none;">
+        <img class="card-img-top img-fluid img1" src="../images/Balochistan/motel.jpg" alt="Card image">
+        <div class="card-body">
+        <h5 class="card-title text-center">Gawadar Tourist Motel</h5>
+      </div>
+      </div> 
+      </div>
+    </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="footer-clean mt-5">
+      <footer>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                <div class="row ">
+              <h3 class="col-12 p-0 text-center">Cities Of Pakistan</h3>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Karachi.html">Karachi</a></li>
+                  <li><a href="../htmlpages/Hyd.html">Hyderabad</a></li>
+                  <li><a href="../htmlpages/Sukkur.html">Sukkur</a></li>
+                  <li><a href="../htmlpages/Lahore.html">Lahore</a></li>
+                  <li><a href="../htmlpages/Isd.html">Islamabad</a></li>
+                  <li><a href="../htmlpages/Faisalabad.html">Faisalabad</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Bahawalpur.html">Bahawalpur</a></li>
+                  <li><a href="../htmlpages/Multan.html">Multan</a></li>
+                  <li><a href="../htmlpages/Quetta.html">Quetta</a></li>
+                  <li><a href="../htmlpages/Gawadar.html">Gawadar</a></li>
+                  <li><a href="../htmlpages/Peshawer.html">Peshawer</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mt-2 item">
+                <ul>
+                  <li><a href="../htmlpages/Abbottabad.html">Abbottabad</a></li>
+                  <li><a href="../htmlpages/Swat.html">Swat</a></li>
+                  <li><a href="../htmlpages/Gilgitc.html">Gilgit</a></li>
+                  <li><a href="../htmlpages/Hunza.html">Hunza</a></li>
+                  <li><a href="../htmlpages/Skardu.html">Skardu</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="row">
+                  <div class="col-md-5 item">        
+                  <h3>Quick Links</h3>
+                  <ul class="mt-3">
+                      <li><a href="../htmlpages/about.html">About Us</a></li>
+                      <li><a href="../htmlpages/map.html">Map of Pakistan</a></li>
+                  </ul>
+              </div>
+  
+              <div class="col-md-7 pt-5">
+                <h4 class="text-center">"It is better to see something ones than to hear about it thousand times."</h4>
+                <h5 class="text-center">~Anonymous</h5>
+              </div>
+              </div>
+      </div>
+            <div class="row mt-3">
+              <div class="col item social">
+                  <p class="copyright">My Pakistan My Heaven © 2021</p>
+              </div>
+          </div>
+          </div>
+      </footer>
+  </div>
+
+  <!-- Footer Ends -->
+
+<!-- DESTINATIONS MODAL BOX -->
+              
+              <!-- GAWADAR PORT MODAL -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Gawadar Port</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/port1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/port3.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+               
+                 <div class="col-sm-6 mt-2 ">
+                <img src="../images/Balochistan/port4.jpg" class="img-fluid mg1"></div>
+                <div class="col-sm-6 mt-2 ">
+                    <img src="../images/Balochistan/port6.jpg" class="img-fluid mg1"></div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">Gwadar port is around 700 km away from Karachi. This deep seaport was a fishing village where professional fishermen use to come for fishing before it converts to Gwadar port. It is an excellent place where you can enjoy boating and fishing in clear water. It joins Pakistan to the Middle East and Central Asia. A splendid outlook of the Arabian Sea is also a point of attraction for visiting this port.</p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+                 <!--PRINCESS OF HOPE MODAL -->
+         <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">The Princess Of Hope</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/tph2.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/tph4.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Balochistan/tph.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                    It is a unique statue of a prince known as Ling. This statue stands high in the mountains and looks impressive because of its colossal size. It grabs the attention of people who visit Gwadar because of its exceptional appearance.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+         <!--ASTOLA ISLAND MODAL -->
+         <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Astola Island</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/astoal.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/astola2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Balochistan/astola3.png" class="img-fluid mg1"></div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                    Astola means seven rocks. This charming island is around 40 km far from the Pansi area. You can reach there in about five hours using motorboats from Pansi. The length of this island is 7 km whereas the width is 2.5 km. Scuba diving and fishing are some of the favorite activities that visitors like to have on this island. You can also see many dolphins and green turtles on this island. One of the oldest temple known as “Kali Devi Temple” can also be seen there which is quite popular among the people of the Hindu religion. A different prayer yard that was explicitly built for Khwaja Khizr is also a historical place to see there.
+                </p>
+              </div>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+         <!--HINGOL PARK MODAL -->
+         <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Hingol National Park</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/hingol1.jpg"class="img-fluid mg1">
+              </div>
+                <div class="col-sm-6 mt-1">
+                <img src="../images/Balochistan/hingol2.jpg" class="img-fluid mg1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 d-grid mx-auto">
+                <img src="../images/Balochistan/hingol3.jpeg" class="img-fluid mg1"></div>
+                
+              </div>
+                <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                    This park has the honor to be the most significant national park in this country. If you like a wide range of animals, then you will surely enjoy this place. It is built in 1988 and surrounded by an area of 640 sq mi. It has around 250 species of different plants along with 185 species of numerous birds and 100 species of mammals and reptiles.
+                </p>
+              </div>
+              <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close 
+                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- ORMARA BEACH MODAL -->
+         <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-dark">
+                  <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Ormara Beach</h4>
+                      <span aria-hidden="true">&times;</span>
+                </div>
+                <div class="modal-body bg-dark">
+                  <div class="row">
+                    <div class="col-sm-6 mt-1">
+                  <img src="../images/Balochistan/ormara.jpg"class="img-fluid mg1">
+                </div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Balochistan/ormara2.jpg" class="img-fluid mg1">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 mt-2 ">
+                  <img src="../images/Balochistan/ormara3.jpg" class="img-fluid mg1"></div>
+                  <div class="col-sm-6 mt-2 ">
+                    <img src="../images/Balochistan/ormara4.jpg" class="img-fluid mg1"></div>
+                  <p class="text-white mt-3 text-justify" style="font-size: medium;">This beach is the center point of Karachi and Gwadar. It has outstanding historical value because it was the pit spot of Ormuz, the general of Alexander. It is an excellent natural beach that is almost 5 hours drive from Karachi city. It is a low population area where the majority are of Baloch people. This area is under the power of the Pakistan Navy. Jinnah naval base which is the second biggest naval base of Pakistan is at Ormara. The crafts of the navy can be viewed easily there.</p>
+                </div>
+                <div class="modal-footer bg-dark">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                    Close 
+                   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+  
+                   <!--HAMMERHEAD MODAL -->
+           <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-dark">
+                  <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Hammerhead</h4>
+                      <span aria-hidden="true">&times;</span>
+                </div>
+                <div class="modal-body bg-dark">
+                  <div class="row">
+                    <div class="col-sm-6 mt-1">
+                  <img src="../images/Balochistan/hammer1.jpg"class="img-fluid mg1">
+                </div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Balochistan/hammer2.jpg" class="img-fluid mg1">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 mt-2 d-grid mx-auto">
+                  <img src="../images/Balochistan/hammer3.jpg" class="img-fluid mg1">
+                  </div>
+                </div>
+                  <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                    This place is called Hammerhead because of the resemblance of its shape. It was created by the mud volcano similarly to the other rocks in Gwadar. At this place, you can outlook the Arabian Sea at your south and Gwadar city on your north.
+                  </p>
+                </div>
+                <div class="modal-footer bg-dark">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                    Close 
+                   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+           <!--BABA MODAL -->
+           <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-dark">
+                  <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Baba Chandragup</h4>
+                      <span aria-hidden="true">&times;</span>
+                </div>
+                <div class="modal-body bg-dark">
+                  <div class="row">
+                    <div class="col-sm-6 mt-1">
+                  <img src="../images/Balochistan/baba5.jpg"class="img-fluid mg1">
+                </div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Balochistan/baba4.jpg" class="img-fluid mg1">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 mt-2">
+                  <img src="../images/Balochistan/baba1.jpg" class="img-fluid mg1"></div>
+                  <div class="col-sm-6 mt-2">
+                    <img src="../images/Balochistan/baba3.jpg" class="img-fluid mg1"></div>
+                  <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                    If you like to see a mud volcano, then this is a must seen place for you. To get to this place you have two options. Either go by foot and travel around 7 km or rent a four-wheel vehicle. This mud volcano has the specialty of spitting out cold mud.
+                  </p>
+                </div>
+                </div>
+                <div class="modal-footer bg-dark">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                    Close 
+                   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  
+           <!--DESERT MODAL -->
+           <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-dark">
+                  <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Desert</h4>
+                      <span aria-hidden="true">&times;</span>
+                </div>
+                <div class="modal-body bg-dark">
+                  <div class="row">
+                    <div class="col-sm-6 mt-1">
+                  <img src="../images/Balochistan/desert.jfif"class="img-fluid mg1">
+                </div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Balochistan/desert2.jfif" class="img-fluid mg1">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 mt-2 d-grid mx-auto">
+                  <img src="../images/Balochistan/desert4.jpg" class="img-fluid mg1"></div>
+                  
+                </div>
+                  <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                    A coastal semi-dessert can also be seen while crossing the river bridge of Hingol. It is an ideal place to have some fun with the desert safari which you can usually enjoy in the Middle Eastern countries.
+                  </p>
+                </div>
+                <div class="modal-footer bg-dark">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                    Close 
+                   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--THE SPHINX MODAL -->
+          <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-dark">
+                  <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">The Sphinx</h4>
+                      <span aria-hidden="true">&times;</span>
+                </div>
+                <div class="modal-body bg-dark">
+                  <div class="row">
+                    <div class="col-sm-6 mt-1">
+                  <img src="../images/Balochistan/sphinx.jpg"class="img-fluid mg1">
+                </div>
+                  <div class="col-sm-6 mt-1">
+                  <img src="../images/Balochistan/sphinx2.jpg" class="img-fluid mg1">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 mt-2 d-grid mx-auto">
+                  <img src="../images/Balochistan/sphinx3.jpg" class="img-fluid mg1"></div>
+                  
+                </div>
+                  <p class="text-white mt-3 text-justify" style="font-size: medium;">
+                    Egypt is the most commonplace to see the sphinx made by humans, but Gwadar gives you the facility to see them without going to Egypt. It is a notable attraction of this place that is highly admired among visitors. 
+                  </p>
+                </div>
+                <div class="modal-footer bg-dark">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                    Close 
+                   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+
+<!-- HOTELS MODAL BOX -->
+
+        <!-- PC HOTEL -->
+        <div class="modal fade" id="modal01" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Zaver PC(Pearl Continental)</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                  <div class="row">
+                    <div class="col-md-12 mt-2">
+                    <img src="../images/Balochistan/pc1.jpg" class="img-fluid mg3">
+                  </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-sm-6 mt-2">
+                  <img src="../images/Balochistan/pcr.jpg"class="img-fluid mg1">
+                  <h6 class="text-white text-center">Rooms</h6>
+                </div>
+                  <div class="col-sm-6 mt-2">
+                  <img src="../images/Balochistan/pcl.jpg" class="img-fluid mg1">
+                  <h6 class="text-white text-center">Lobby</h6>
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col-sm-6 mt-1 d-grid mx-auto">
+                  <img src="../images/Balochistan/pcd.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Dining</h6>
+              </div>
+              </div>
+        
+              </div>
+      
+            <div class="modal-footer bg-dark">
+      
+                  <!-- CLOSE -->
+        
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close  
+                 </button>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+      
+        <!-- SADAF RESORT HOTEL -->
+      
+        <div class="modal fade" id="modal02" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Sadaf Resort</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-md-12 mt-2">
+                  <img src="../images/Balochistan/sadafresort.jpg" class="img-fluid mg3">
+                </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-sm-6 mt-2">
+                <img src="../images/Balochistan/sadafresortr.jpg"class="img-fluid mg1">
+                <h6 class="text-white text-center">Rooms</h6>
+              </div>
+                <div class="col-sm-6 mt-2">
+                <img src="../images/Balochistan/sadafresortd.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Dining</h6>
+                </div>
+              </div>
+                <div class="row ">
+                  <div class="col-sm-6 mt-1 mx-auto d-grid">
+                  <img src="../images/Balochistan/sadafresortl.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Lobby</h6>
+              </div>
+                </div>
+              </div>
+      
+            </div>
+      
+            <div class="modal-footer bg-dark">
+              <!-- CLOSE -->
+        
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close  
+                 </button>
+            </div>
+          </div>
+        </div>
+
+      
+      <!-- ROYAL HOTEL -->
+        <div class="modal fade" id="modal03" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Royal Resort</h4>
+                    <span aria-hidden="true">&times;</span>
+              </div>
+              <div class="modal-body bg-dark">
+                <div class="row">
+                  <div class="col-md-12 mt-2">
+                  <img src="../images/Balochistan/royal.jfif" class="img-fluid mg3">
+                </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-sm-6 mt-2">
+                <img src="../images/Balochistan/royalr.jpg"class="img-fluid mg1">
+                <h6 class="text-white text-center">Rooms</h6>
+              </div>
+                  <div class="col-sm-6 mt-2">
+                  <img src="../images/Balochistan/royall.jpg" class="img-fluid mg1">
+                <h6 class="text-white text-center">Lobby</h6>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2 mx-auto d-grid">
+              <img src="../images/Balochistan/royald.jpg"class="img-fluid mg1">
+              <h6 class="text-white text-center">Dining</h6>
+            </div>
+            </div>
+            </div>
+      
+            <div class="modal-footer bg-dark">
+      
+                  <!-- CLOSE -->
+        
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                  Close  
+                 </button>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+
+ <!-- MOTEL HOTEL -->
+ <div class="modal fade" id="modal04" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-justify text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Gawadar Tourist Motel</h4>
+            <span aria-hidden="true">&times;</span>
+      </div>
+      <div class="modal-body bg-dark">
+        <div class="row">
+          <div class="col-md-12 mt-2">
+          <img src="../images/Balochistan/motel1.jpg" class="img-fluid mg3">
+        </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-sm-6 mt-2">
+        <img src="../images/Balochistan/motelr.jfif"class="img-fluid mg1">
+        <h6 class="text-white text-center">Rooms</h6>
+      </div>
+          <div class="col-sm-6 mt-2">
+          <img src="../images/Balochistan/moteld.jpg" class="img-fluid mg1">
+        <h6 class="text-white text-center">Dining</h6>
+      </div>
+    </div>
+    </div>
+
+    <div class="modal-footer bg-dark">
+
+          <!-- CLOSE -->
+
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+          Close  
+         </button>
+      
+    </div>
+  </div>
+</div>
+</div>
+         <!--Location Modal 1-->
+ <div class="modal fade" id="mymodal1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.744750960884!2d62.33745931432542!3d25.11050034137587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ebee233f5eceaf3%3A0xc8622abf840e0dac!2sGwadar%20Sea%20Port!5e0!3m2!1sen!2s!4v1631028292335!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Location Modal 2 -->
+<div class="modal fade" id="mymodal2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.1942914905553!2d65.29806661433243!3d25.431767128386053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb6e8bae35a46e1%3A0x5e9f202564747d9!2sPrincess%20of%20Hope!5e0!3m2!1sen!2s!4v1631028372456!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 3-->
+<div class="modal fade" id="mymodal3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28899.119049783352!2d63.82893548987285!3d25.122506427648105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb9bdc5d7b75707%3A0x95cf59b473aca9d7!2sAstola%20Island!5e0!3m2!1sen!2s!4v1631028395824!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 4-->
+<div class="modal fade" id="mymodal4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230580.4798929436!2d65.45102710936314!3d25.444280758807476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb6f8234999a189%3A0xa3e223a3f7b71ae6!2sHingol%20National%20Park!5e0!3m2!1sen!2s!4v1631028435225!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!--Location Modal 5-->
+ <div class="modal fade" id="mymodal5" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115521.60514229746!2d64.5884610134618!3d25.201530849807828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb741d20d276b1d%3A0xf869bd7927619244!2sOmara%20beach!5e0!3m2!1sen!2s!4v1631028581334!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Location Modal 6 -->
+<div class="modal fade" id="mymodal6" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6892.712960647139!2d67.09681567207143!3d30.255422627223872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ed2d8b19bd6242f%3A0xb9c4bcd77e898859!2sHanna%20Lake!5e0!3m2!1sen!2s!4v1631004471252!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 7-->
+<div class="modal fade" id="mymodal7" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28821.31506291612!2d65.84165704033103!3d25.449481713339317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb41ffc4aee6725%3A0x71b0104d0f28f3c0!2sChandragup!5e0!3m2!1sen!2s!4v1631028705391!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Location Modal 8-->
+<div class="modal fade" id="mymodal8" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d461621.10356203665!2d62.05874342539807!3d25.323855950014565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57b00ab3bf52b6af!2sGwadar%20Desert!5e0!3m2!1sen!2s!4v1631028781484!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Location Modal 9-->
+<div class="modal fade" id="mymodal9" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h4 class="modal-title text-white">Location</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body bg-dark">
+          <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.754419685195!2d67.1718324142405!3d30.272577681799934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ed2d9b327e79c13%3A0x1a92480a5aa5bce0!2sHanna%20Urak%20Pool!5e0!3m2!1sen!2s!4v1631004651419!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:411px;}</style>
+          <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:320px;}</style></div></div>
+        </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+<script>
+
+        //  VIEW MORE
+        $(document).ready(function(){
+      $("#view").click(function(){
+        $("#viewmore").fadeIn("slow")
+        $("#view").hide();
+        
+      });
+});
+
+// DESTINATIONS
+function port() {
+$('#modal1').modal('show');
+};   
+function princess() {
+$('#modal2').modal('show');
+};
+function astola() {
+$('#modal3').modal('show');
+};
+function park() {
+$('#modal4').modal('show');
+};
+function beach() {
+$('#modal5').modal('show');
+};   
+function hammer() {
+$('#modal6').modal('show');
+};
+function baba() {
+$('#modal7').modal('show');
+};
+function desert() {
+$('#modal8').modal('show');
+};
+function sphinx() {
+$('#modal9').modal('show');
+};
+
+// HOTELS
+
+function pc() {
+          $('#modal01').modal('show');
+};   
+function sadaf() {
+          $('#modal02').modal('show');
+};
+function  royal() {
+          $('#modal03').modal('show');
+      };
+      function  motel() {
+          $('#modal04').modal('show');
+      };
+</script>
